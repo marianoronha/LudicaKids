@@ -1,7 +1,7 @@
 # LÚDICA KIDS
 <p align="center">
-<img src= "midias/logo.png" width="400"/>
-<img src="midias/logo2.png" width="400"/>
+<img src= "midias/logo.png" width="200"/>
+<img src="midias/logo2.png" width="200"/>
 </p>
 
 ## Sobre o Lúdica Kids
