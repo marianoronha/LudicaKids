@@ -3,7 +3,7 @@
 </p>
 
 
-# LudicaKids 
+# LúdicaKids 
 > **"Brincar para acalmar, aprender para crescer."**
 <p align="left">
 <img src= "midias/logo2.png" width="80"/>
