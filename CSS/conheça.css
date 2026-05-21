@@ -10,7 +10,7 @@
     width:100%;
     min-height:calc(100vh - 4.5em);
 
-    background-image: url('../MIDIAS/fundoconheca.png');
+    background-image: url('../midias/fundoconheca.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
