@@ -6,7 +6,7 @@
 # LudicaKids 
 > **"Brincar para acalmar, aprender para crescer."**
 <p align="left">
-<img src= "midias/logo2.png" width="50"/>
+<img src= "midias/logo2.png" width="80"/>
 </p>
 **Sobre o Projeto:** 
 O Lúdica Kids é um projeto frontend desenvolvido com foco em saúde mental infantil, oferecendo uma experiência visual lúdica e interativa para crianças.
