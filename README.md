@@ -1,10 +1,7 @@
-# LÚDICA KIDS
 <p align="center">
 <img src= "midias/logo.png" width="200"/>
 </p>
-<p> 
-<img src="midias/logo2.png" width="200"/>
-</p>
+
 
 # LudicaKids
 > **"Brincar para acalmar, aprender para crescer."**
