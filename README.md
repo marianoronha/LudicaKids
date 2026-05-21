@@ -6,14 +6,9 @@
 <img src="midias/logo2.png" width="200"/>
 </p>
 
-## Sobre o Lúdica Kids
+# LudicaKids
 > **"Brincar para acalmar, aprender para crescer."**
 
-
-O **Lúdica Kids** é uma plataforma digital voltada ao desenvolvimento infantil por meio de atividades interativas, educativas e lúdicas. Seu objetivo é contribuir para o combate à ansiedade infantil, estimulando habilidades cogitivas e emocionais das crianças. 
-O site possui caráter exclusivamente informativo, oferecendo orientações e esclarecimentos sobre as atividades e jogos, que estarão disponíveis no aplicativo da plataforma.
-
-# LudicaKids-Frontend
 **Sobre o Projeto:**
 O Lúdica Kids é um projeto frontend desenvolvido com foco em saúde mental infantil, oferecendo uma experiência visual lúdica e interativa para crianças.
 A aplicação foi construída utilizando tecnologias web fundamentais e possui páginas informativas, jogos educativos e atividades interativas voltadas ao desenvolvimento emocional e sensorial.
