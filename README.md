@@ -1,8 +1,8 @@
 # LÚDICA KIDS
 <p align="center">
 <img src= "midias/logo.png" width="200"/>
-
- 
+</p>
+<p> 
 <img src="midias/logo2.png" width="200"/>
 </p>
 
@@ -17,7 +17,7 @@ O objetivo principal do projeto é proporcionar um ambiente acolhedor, intuitivo
 ---
 
 # **Tecnologias Utilizadas**
-- HTML5
+- HTML
 - CSS
 - JavaScript
 
