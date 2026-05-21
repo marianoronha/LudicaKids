@@ -1,0 +1,147 @@
+
+ <link rel="icon" href="midias/iconlogo.png">
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil Criança</title>
+
+    <link rel="stylesheet" href="CSS/perfil.css">
+    <link rel="stylesheet" href="CSS/footer.css">
+    <link rel="icon" href="midias/iconlogo.png">
+</head>
+
+<body>
+
+    
+
+    <section class="perfil-container">
+
+        <!-- basta trocar esta parte -->
+
+<div class="foto-perfil" onclick="abrirPopup()">
+    <img src="midias/girafasperfil/responsavelimgperfil.png" id="fotoPrincipal" alt="Foto Perfil">
+
+    <!-- <div class="icone-camera">
+        📷
+    </div> -->
+</div> 
+            <p class="perfil-texto">
+                Você está no perfil: Criança
+            </p>
+
+        </div>
+
+     
+
+        <div class="dados-box destaque">
+            <input type="text" placeholder="Digite o nome da criança">
+        </div>
+
+        <div class="dados-box">
+            <input type="text" placeholder="Digite o nome do responsável">
+        </div>
+
+        <button class="btn-alterar" onclick="abrirPopupResponsavel()">
+    FAZER ALTERAÇÕES
+</button>
+
+    </section>
+
+
+
+    <section class="banner-app">
+
+         <div class="box-app">
+            <h3>
+                BAIXE O NOSSO <br>
+                APLICATIVO
+            </h3>
+
+            <img src="midias/iconlogo.png" alt="Logo App">
+        </div>
+        <p class="frase">
+                    BRINCAR PARA ACALMAR, APRENDER PARA CRESCER!
+            </p>
+
+       
+
+    </section>
+
+<!-- escolher foto -->
+
+    <div class="popup" id="popupFotos">
+
+        <div class="popup-content">
+
+            <span class="fechar" onclick="fecharPopup()">
+                ×
+            </span>
+
+            <h2>
+                Escolha uma foto de perfil
+            </h2>
+
+            <div class="galeria-fotos">
+
+                <img src="midias/girafasperfil/responsavelimgperfil.png" onclick="trocarFoto(this.src)">
+                <img src="midias/girafasperfil/girafa1.png" onclick="trocarFoto(this.src)">
+                <img src="midias/girafasperfil/girafa2.png" onclick="trocarFoto(this.src)">
+                <img src="midias/girafasperfil/girafa3.png" onclick="trocarFoto(this.src)">
+                <img src="midias/girafasperfil/girafa4.png" onclick="trocarFoto(this.src)">
+                <img src="midias/girafasperfil/girafa5.png" onclick="trocarFoto(this.src)">
+                <img src="midias/girafasperfil/girafa6.png" onclick="trocarFoto(this.src)">
+                <img src="midias/girafasperfil/girafa7.png" onclick="trocarFoto(this.src)">
+                <img src="midias/girafasperfil/girafa8.png" onclick="trocarFoto(this.src)">
+                <img src="midias/girafasperfil/girafa9.png" onclick="trocarFoto(this.src)">
+
+            </div>
+
+        </div>
+
+    </div>
+<!-- pop up de aviso que a alteração é só do responsavel -->
+
+<div class="popup" id="popupResponsavel">
+
+    <div class="popup-content popup-login">
+
+        <span class="fechar" onclick="fecharPopupResponsavel()">
+            ×
+        </span>
+
+        <h2>
+            Acesso do Responsável
+        </h2>
+
+        <p class="texto-popup">
+            Para alterar os dados, informe o email e a senha 
+        </p>
+
+        <div class="campo-popup">
+            <input type="email" placeholder="Digite o email ">
+        </div>
+
+        <div class="campo-popup">
+            <input type="password" placeholder="Digite a senha ">
+        </div>
+
+        <button class="btn-confirmar">
+            ENTRAR
+        </button>
+
+    </div>
+
+</div>
+    
+
+    <script src="js/perfil.js"></script>
+        <script src="js/menujogos.js"></script>
+        <script src="js/rodape.js"></script>
+  
+
+</body>
+</html>

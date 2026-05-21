@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, 'Open Sans',sans-serif;
+    background-color: #fff8f8;
+
+    overflow-x: hidden;
+
+    
+
+}
+
+/* CONTAINER */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    margin-top: 7em;
+}
+
+/* SUBTITULO */
+.subtitulo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #004aad;
+    margin-top: 0.5em;
+    margin-bottom: 2rem;
+}
+
+/* INTEGRANTES */
+.integrantes {
+    display: flex;
+    justify-content: center;
+    gap: 5vw;
+    flex-wrap: wrap;
+    margin-bottom: 4rem;
+}
+
+.card {
+    width: 22vw;
+    max-width: 260px;
+    min-width: 180px;
+}
+
+.card img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-top: 2em;
+}
+
+.card p{
+    margin-top: 0em;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+/* TEXTO */
+.texto {
+    max-width: 600px;
+    margin: 2rem auto;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin-top: 40px;
+}
+
+.quemsomos{
+    margin-top: 0.1em;
+
+}
+.quemsomos img{
+    padding-top: 0.1em;
+    max-width: 100%;
+}
+
+
+.girafa img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3em;
+    margin-top: 4em; 
+}
+.projeto{
+    margin-top: 40px;
+}
+
+.projeto img{
+    margin-top: 40px;
+}
+
+
+
+
+
+/* footer */
+.footer{
+    background-color: #004aad;
+    color: white;
+    padding: 10px 20px;
+    font-family: Arial, 'Open Sans',sans-serif;
+
+    
+
+
+}
+
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    
+
+}
+
+.footer-left p {
+    margin: 0.4em;
+    font-size: 1em;
+    
+
+}
+
+.footer-right{
+   display: flex;
+   flex-direction: column;
+   align-items: flex-end;
+   flex-wrap: wrap;
+   
+}
+
+.logo-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    
+}
+
+.logo-container img {
+    
+    width: 94%;
+    max-width: 7em;
+    height: auto;
+    padding-top: 3em;
+
+   
+    
+}
+
+.footer-right-text{
+    font-size: 1em;
+    font-weight: bold;
+    align-items: flex-end;
+    margin: 0.4em;
+}

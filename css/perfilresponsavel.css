@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #b6d5f0;
+    margin: 0;
+    padding: 0;
+}
+
+.perfil-container {
+    text-align: center;
+    padding: 4em 1.2em;
+    background: #b6d5f0;
+}
+
+.foto-perfil {
+    width: 14em;
+    height: 14em;
+    border-radius: 50%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.foto-perfil img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+}
+
+.perfil-texto {
+    margin-top: 1.5em;
+    margin-bottom: 2em;
+    font-size: 1.6em;
+    color: #333;
+}
+
+
+
+.dados-box {
+    width: 40%;
+    background: #f7f2f2;
+    margin: 1.2em auto;
+    padding: 1.2em;
+    border-radius: 2em;
+     outline: none;
+}
+
+.dados-box input {
+    width: 100%;
+    border: none;
+    background: transparent;
+    font-size: 1.7em;
+    outline: none;
+}
+
+
+.destaque p {
+    font-weight: bold;
+}
+
+.linha-status {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.status {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bolinha {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+}
+
+.ativo .bolinha {
+    background: #52b96b;
+}
+
+.inativo .bolinha {
+    background: #b6251f;
+}
+
+.btn-alterar {
+    margin-top: 45px;
+    background: #004bb8;
+    color: white;
+    border: none;
+    width: 380px;
+    height: 78px;
+    border-radius: 40px;
+    font-size: 22px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.botoes-extras {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.btn-extra {
+    width: 430px;
+    height: 70px;
+    border: none;
+    border-radius: 40px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+}
+
+.atividade {
+    background: #dfeaf5;
+}
+
+.ajuda {
+    background: #f4efc7;
+}
+
+.banner-app {
+    text-align: center;
+    padding: 5em 2em;
+    min-height: 60em;
+    background: url("../midias/fundocadastroatualizado.png") no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.box-app {
+    width: 31em;
+    max-width: 90%;
+    margin: 6em auto 2.5em auto;
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 2em;
+    padding: 2.2em;
+}
+
+.box-app h3 {
+    font-size: 2.1em;
+    color: #2b52c5;
+    margin-bottom: 0.8em;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.box-app img {
+    width: 5.5em;
+}
+
+.frase {
+    text-align: center;
+    margin-top: 1em;
+    font-weight: bold;
+    font-size: 1.9em;
+    background: linear-gradient(to right, #2f5bb7, #a66be0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.popup-content {
+    background: white;
+    width: 80%;
+    max-width: 56em;
+    margin: 4em auto;
+    padding: 2em;
+    border-radius: 1.5em;
+    text-align: center;
+    position: relative;
+}
+
+.fechar {
+    position: absolute;
+    right: 25px;
+    top: 15px;
+    font-size: 2.2em;
+    cursor: pointer;
+    color: #333;
+}
+
+.popup-login {
+    max-width: 31em;
+    padding: 2.5em;
+}
+
+.popup-login h2 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+    color: #222;
+}
+
+.texto-popup {
+    margin-top: 0.8em;
+    margin-bottom: 1.5em;
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.5;
+}
+
+.campo-popup {
+    width: 100%;
+    background: #f7f2f2;
+    padding: 1.1em;
+    border-radius: 1.2em;
+    margin-bottom: 1.2em;
+}
+
+.campo-popup input {
+    width: 100%;
+    border: none;
+    background: transparent;
+    font-size: 1.2em;
+    outline: none;
+}
+
+.btn-confirmar {
+    background: #004bb8;
+    color: white;
+    border: none;
+    padding: 1em 3em;
+    border-radius: 2em;
+    font-size: 1.2em;
+    cursor: pointer;
+    font-weight: bold;
+}

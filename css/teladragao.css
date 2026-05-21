@@ -1,0 +1,393 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    font-family: Arial, 'Open Sans',sans-serif;
+    margin: 0;
+    font-size: 1em;
+    overflow-x: hidden;
+    background-color: #e3f2ff !important;
+}
+
+/* DECORAÇÃO */
+.decoracao {
+  position: relative; 
+  width: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.nuvem {
+  position: absolute;
+  width: 8em;
+}
+
+.n1 { 
+    bottom: -36em; 
+    left: 36em; 
+}
+.n2 { 
+    top: 4em; 
+    right: 3em; 
+}
+
+@media (max-width: 900px){
+.n1 { bottom: -36em; left: 17em; }
+.n2 { top: -7.5em; right: 1em; }
+}
+
+.borboleta {
+  position: absolute;
+  width: 2em;
+}
+
+.b1 { 
+    top: -7em; 
+    left: 10em; 
+}
+.b2 { 
+    top: 20em; 
+    right: 8em;
+}
+@media (max-width: 900px){
+    .b1 { top: 30em; left: 5em;}
+    .b2 { top: 13.5em; right: 4em;}
+}
+.dragao {
+    position: absolute;
+    top: 0em; 
+    left: 0;
+    width: 9em;
+    max-width: 9em;
+    z-index: 1;
+    margin-right: 2%;
+}
+
+@media (max-width: 900px) {
+    .dragao {
+    position: absolute;
+    top: -12em; 
+    left: 0;
+    width: 6.5em;
+    max-width: 9em;
+    z-index: 1;
+    margin-right: 2%;
+    }
+}
+
+.castelo {
+    display: block;
+    width: 100%;
+    height: auto;
+
+}
+
+
+/* CARROSSEL */
+/*ajuste das imagens dentro do container*/
+.tela-dragao .dragao-container img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    max-height: 28em;
+}
+
+/* essa parte aqui é como eu fiz o tablet*/
+.tela-dragao .dragao-container{
+  position:relative;
+  width: 100%;
+  max-width: 48em;
+  min-width: 18em;
+  background: #eae9f1;
+  margin: 6em auto 3em auto;
+  padding: 1.5em 4.5em;
+  border-radius: 1.2em;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+/*personalização dos botões(tenho que alterar)*/
+.botao-esquerda, .botao-direita{
+    position: absolute;
+    top: 50%;
+    font-size: 1em;
+    transform: translateY(-50%);
+    background: #f7f7f7;
+    border: 0.01em solid#ccc;
+    border-radius: 1em;
+    padding: 0.9em 0.7em;
+    cursor: pointer;
+}
+
+/*afastamento dos botoes(tenho que alterar)*/
+.botao-esquerda:hover,
+.botao-direita:hover{
+    background: #f5f5f5;
+}
+
+.botao-esquerda{left: 1.2em;}
+.botao-direita {right: 1.2em;}
+
+@media(max-width: 900px){
+.tela-dragao .dragao-container{
+    width: 87%;
+    padding: 1.3em 3.5em;
+    margin-top: 5em;
+}
+.tela-dragao .dragao-container img{
+    max-height: 29em;
+}
+.botao-esquerda{left: 0.9em; font-size: 0.9em;}
+.botao-direita {right: 0.9em; font-size: 0.9em;} 
+}
+.fonte{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 7em;
+    padding: 0 5%;
+    
+}
+
+.titulo{
+  width: 60%;
+  max-width: 46em;
+  height: auto;
+}
+
+@media(max-width: 900px){
+.titulo{
+ width: 90%;
+    }
+}
+
+/* TEXTO */
+.conteudo1{
+    max-width: 50em;
+    margin: 2em auto;
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: black;
+    position: relative;
+    z-index: 2;
+}
+
+.texto{
+    margin-bottom: 1.5em;
+    margin: 2em;
+}
+
+.conteudo2{
+    margin-top: 1em;
+    
+}
+
+/* ESPAÇO FINAL */
+.espaço-final{
+    height: 6em;
+}
+
+
+
+
+
+/* ESTRUTURA (não mexe no menu) */
+.tela-dragao,
+.nav-ludica {
+  position: relative;
+  z-index: 2;
+}
+
+.menu-lateral{
+  position: fixed;
+  z-index: 20;
+}
+
+.menu-ludica{
+    margin:0;
+    font-family: Arial, 'Open Sans',sans-serif;
+   
+}
+
+/* NAV (mantido igual) */
+.menu-ludica .nav-ludica{
+    background:#f2f2f2;
+    height:70px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 20px;
+}
+
+.menu-ludica .nav-esquerda{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.menu-ludica .btn-menu{
+    font-size:30px;
+    background:none;
+    border:none;
+    cursor:pointer;
+    position:relative;
+    z-index:30;
+}
+
+.menu-ludica .logo-ludica{
+    height:15em;
+    width:19em;
+    margin-left:-129px;
+    margin-top:83px;
+    position:relative;
+    z-index:1;
+}
+
+.menu-ludica .nav-direita{
+    display:flex;
+    gap:15px;
+}
+
+.menu-ludica .btn-nav{
+background:#f8c8dc;
+    padding:8px 15px;
+    border-radius:10px;
+    text-decoration:none;
+    color:black;
+    font-weight:bold;
+}
+
+/* MENU LATERAL (mantido) */
+.menu-ludica .menu-lateral{
+    position:fixed;
+    top:0;
+    left:-320px;
+    width:300px;
+    height:100%;
+    background:#e9e7df;
+    padding:15px;
+    transition:0.4s;
+    border-radius:0 20px 20px 0;
+    z-index:20;
+    overflow-y:auto;
+}
+
+.menu-ludica .menu-lateral.ativo{
+    left:0;
+}
+
+.menu-ludica h2{
+    text-align:center;
+    text-decoration:underline;
+}
+
+.perfil-ludica img { 
+    width: 180px; 
+    height: 150px; 
+    object-fit: cover; 
+}
+
+.menu-ludica .perfil-ludica {
+    display: flex;
+    align-items: center;
+}
+
+.menu-ludica .lista-jogos{
+    padding:15px;
+    border-radius:10px;
+    margin-top:10px;
+    display:none;
+}
+
+.menu-ludica .lista-jogos.ativo{
+    display:block;
+}
+
+.menu-ludica ul{
+    padding-left:20px;
+}
+
+.menu-ludica h4{
+    text-decoration:underline;
+    margin-top:10px;
+}
+
+.menu-ludica .sair-menu{
+    display:block;
+    margin-top:30px;
+    text-align:center;
+    font-weight:bold;
+    text-decoration:underline;
+}
+
+
+
+
+/* footer */
+.footer{
+    background-color: #004aad;
+    color: white;
+    padding: 10px 20px;
+    font-family: Arial, 'Open Sans',sans-serif;
+
+    
+
+
+}
+
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    
+
+}
+
+.footer-left p {
+    margin: 0.4em;
+    font-size: 1em;
+    
+
+}
+
+.footer-right{
+   display: flex;
+   flex-direction: column;
+   align-items: flex-end;
+   flex-wrap: wrap;
+   
+}
+
+.logo-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    
+}
+
+.logo-container img {
+    
+    width: 94%;
+    max-width: 7em;
+    height: auto;
+    padding-top: 3em;
+
+   
+    
+}
+
+.footer-right-text{
+    font-size: 1em;
+    font-weight: bold;
+    align-items: flex-end;
+    margin: 0.4em;
+}

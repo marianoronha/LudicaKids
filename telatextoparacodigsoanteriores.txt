@@ -1,0 +1,3007 @@
+AQUI DEIXEI OS CODIGOS SEM MODIFICAÇÕES DE MENU E FOOTER
+
+///////////////////////////TELADRAGAO.HTML
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Respirando com o Dragão</title>
+      
+    <link rel="icon" href="midias/iconlogo.png">
+
+    <link rel="stylesheet" href="CSS/teladragao.css">
+</head>
+
+<body class="menu-ludica" data-pagina="dragao">
+
+<nav class="nav-ludica">
+
+<div class="nav-esquerda">
+<button class="btn-menu" onclick="abrirMenuLudica()">&#9776;</button>
+<a href="conheça.html">
+<img src="midias/imgbubbamenu.png" class="logo-ludica" alt="logo bubba">
+</a>
+</div>
+
+<div class="nav-direita">
+<a href="quemsomos.html" class="btn-nav">Quem Somos</a>
+</div>
+
+</nav>
+
+<!-- MENU LATERAL -->
+<aside id="menuLudica" class="menu-lateral">
+
+<h2>Tela inicial</h2>
+
+<div class="perfil-ludica">
+  <img src="midias/logoperfil.png" alt="Perfil">
+  <a href="#" class="link-perfil">Perfil</a>
+</div>
+
+<div class="menu-jogos">
+
+   <a href="telasentidosmagicos.html" class="toggle-btn">
+    ▶ Cinco Sentidos Mágicos
+</a>
+F
+  <ul class="lista-jogos">
+    <li>Olinhos Curiosos</li>
+    <li>Mãozinhas Mágicas</li>
+    <li>Escute e Descubra</li>
+    <li>O Nariz Detetive</li>
+    <li>Prove na Imaginação</li>
+  </ul>
+</div> 
+
+<h4><a href="teladragao.html">Respirando com o dragão</a></h4>
+<h4><a href="telaidentificandoemocoes.html">Identificando as emoções</a></h4>
+
+<a href="conheça.html" class="sair-menu"> Sair</a>
+
+</aside>
+ 
+
+<!-- CONTEÚDO -->
+<div class="tela-dragao">
+<div class="dragao-container">
+    <button class="botao-esquerda" onclick="mudarImagem(-1)"><</button>
+    <img id="carrossel" src="../midias/telainicialRD.png" alt="carrossel de imagens">
+    <button class="botao-direita" onclick="mudarImagem(1)">></button>
+  </div>
+
+<!-- DECORAÇÃO (SEM CASTELO AQUI!) -->
+<div class="decoracao">
+
+  <img src="midias/nuvem.png" class="nuvem n1" alt="Nuvem">
+  <img src="midias/nuvem.png" class="nuvem n2" alt="Nuvem">
+
+  <img src="midias/borboleta.png" class="borboleta b1" alt="Borboleta">
+  <img src="midias/borboleta2.png" class="borboleta b2" alt="Borboleta">
+
+  <img src="midias/dragaolado.png" class="dragao" alt="Dragão">
+
+</div>
+
+
+<div class="conteudo1">
+  <h2>Respirando com o Dragão:</h2>
+
+  <p class="texto">
+    Dentro do jogo podemos observar um dragão ansioso e nervoso que sente uma grande necessidade de expelir fogo pela sua boca como um hábito natural da sua espécie, porém tem medo de acabar se excedendo e queimar todo o castelo e o reino, mas tudo o faz acreditar que não pode mais lidar com isso. No jogo, a criança assume um papel muito importante em se comunicar corretamente com a criatura e entender o seu problema assim podendo ajudá-lo.
+  </p>
+
+  <div class="conteudo2">
+    <p class="texto">
+      <strong>Como Jogar:</strong> A interação do jogo irá começar com o usuário guiando a criatura enquanto ele respira profundamente para se acalmar, moderando a inspiração e expiração do ser através do pressionamento de teclas, que após a conclusão da ação demonstrará confiança, satisfação e gratidão terminando o jogo com a missão cumprida. O objetivo é ajudar as crianças a lidarem com suas próprias ansiedades, regulando as emoções usando a respiração como uma forma de auto-relaxamento, ajudando o corpo e a mente a se acalmarem.
+    </p>
+  </div>
+</div>
+
+<div class="espaço-final"></div>
+
+<img src="midias/castelo.png" class="castelo" alt="castelo">
+
+<!-- FOOTER -->
+ <footer class="footer">
+    <div class="footer-container">
+
+        <!-- aqui coloquei as info que vão ficar ao lado esquerdo -->
+         <div class="footer-left">
+            <p>Telefone: 11 94724-6510</p>
+            <p>Email: ludicakidsFatec@gmail.com</p>
+         </div>
+
+         <!-- agora lado direito -->
+          <div class="footer-right">
+            <div class="logo-container">
+                <img src="midias/logo2.png" alt="Logo Girafa LúdicaKids">
+            </div>
+
+            <p class="footer-right-text">
+                Brincar para acalmar, aprender para crescer!
+            </p>
+
+          </div>
+
+    </div>
+</footer>
+
+<script src="js/script.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
+
+
+
+
+////////////////////////TELAIDENTIFICANDOEMOCOES.HTML
+
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Identificando Emoções</title>
+
+    <link rel="icon" href="midias/iconlogo.png">
+
+     <link rel = "stylesheet" href="CSS/telaemocoes.css">
+     
+</head>
+<body class="menu-ludica" data-pagina="emocoes">
+
+<nav class="nav-ludica">
+
+<div class="nav-esquerda">
+<button class="btn-menu" onclick="abrirMenuLudica()">&#9776;</button>
+<a href="conheça.html">
+<img src="midias/imgbubbamenu.png" class="logo-ludica" alt="logo bubba">
+</a>
+</div>
+
+<div class="nav-direita">
+<a href="quemsomos.html" class="btn-nav">Quem Somos</a>
+</div>
+
+</nav>
+
+<!-- MENU na LATERAL -->
+<aside id="menuLudica" class="menu-lateral">
+
+<h2>Tela inicial</h2>
+
+<div class="perfil-ludica">
+  <img src="midias/logoperfil.png" alt="Perfil">
+  <a href="#" class="link-perfil">Perfil</a>
+</div>
+<div class="menu-jogos">
+
+   <a href="telasentidosmagicos.html" class="toggle-btn">
+    ▶ Cinco Sentidos Mágicos
+</a>
+
+  <ul class="lista-jogos">
+    <li>Olhinhos Curiosos</li>
+    <li>Mãozinhas Mágicas</li>
+    <li>Escute e Descubra</li>
+    <li>O Nariz Detetive</li>
+    <li>Prove na Imaginação</li>
+  </ul>
+</div> 
+
+<h4><a href="teladragao.html">Respirando com o dragão</a></h4>
+<h4><a href="telaidentificandoemocoes.html">Identificando as emoções</a></h4>
+
+
+<a href="conheça.html" class="sair-menu"> Sair</a>
+
+</aside>
+
+  
+ <!-----inicio do carrosel---->
+ <!--tela inicial e botões laterais para passar as imagens-->
+<div class="tela-emocoes">
+<div class="emocoes-container">
+    <button class="botao-esquerda" onclick="mudarImagem(-1)"><</button>
+    <img id="carrossel" src="../midias/telainicialIE.png" alt="carrossel de imagens">
+    <button class="botao-direita" onclick="mudarImagem(1)">></button>
+</div>
+
+<!---parte dos elementos do background(sem a girafa)--->
+<div class="elementos">
+
+<img src="midias/sol.png" class="sol" alt="Sol">
+<img src="midias/nuvem.png" class="nuvem n1" alt="Nuvem">
+<img src="midias/nuvem.png" class="nuvem n2" alt="Nuvem">
+<img src="midias/nuvem.png" class="nuvem n3" alt="Nuvem">
+<img src="midias/borboleta.png" class="borboleta b1" alt="Borboleta">
+<img src="midias/borboleta.png" class="borboleta b2" alt="Borboleta">
+
+</div>
+
+
+  <!--parte da descrição do jogo-->
+<div class="conteudo1">
+  <h2>Identificando a Emoções:</h2>
+
+  <p class="texto">
+    Neste jogo as crianças vão realizar uma associação de como a girafa está se sentindo e/ou como aparenta, assim aprendendo a como lidar em casos de raiva, tristeza, angústia, tédio etc., fazendo assim com que a criança consiga identificar não só suas próprias emoções como também de seu ciclo social.
+  </p>
+
+  <div class="conteudo2">
+    <p class="texto">
+    <strong>Objetivo:</strong> Auxiliar no reconhecimento e inteligência emocional, para proporcionar entendimento às crianças referente a seus sentimentos, emoções e ansiedade. Pois muitas delas não conseguem se expressar ou não entendem ao certo o que estão sentindo, assim reprimindo emoções, o que pode levar à ansiedade.
+    </p>
+  </div>
+</div>
+
+
+<!--espaço entre o texto e o rodapé-->
+<div class="espaço-final"></div>
+
+
+<!--fundo da girafa-->
+<img src="midias/girafa.png" class="girafa" alt="Girafa">
+
+
+<!--rodapé-->
+ <footer class="footer">
+    <div class="footer-container">
+
+        <!-- aqui coloquei as info que vão ficar ao lado esquerdo -->
+         <div class="footer-left">
+            <p>Telefone: 11 94724-6510</p>
+            <p>Email: ludicakidsFatec@gmail.com</p>
+         </div>
+
+         <!-- agora lado direito -->
+          <div class="footer-right">
+            <div class="logo-container">
+                <img src="midias/logo2.png" alt="Logo Girafa LúdicaKids">
+            </div>
+
+            <p class="footer-right-text">
+                Brincar para acalmar, aprender para crescer!
+            </p>
+
+          </div>
+
+    </div>
+</footer>
+
+<script src="js/script.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
+
+
+
+
+///////////////////TELASENTIDOSMAGICOS.HTML
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinco Sentidos Mágicos</title>
+
+    <link rel="icon" href="midias/iconlogo.png">
+     <link rel = "stylesheet" href="CSS/telasentidosmagicos.css">
+     
+</head>
+<body class="menu-ludica" data-pagina="sentidosmagicos">
+
+<nav class="nav-ludica">
+
+<div class="nav-esquerda">
+<button class="btn-menu" onclick="abrirMenuLudica()">&#9776;</button>
+<a href="conheça.html">
+<img src="midias/imgbubbamenu.png" class="logo-ludica" alt="logo bubba">
+</a>
+</div>
+
+<div class="nav-direita">
+
+<a href="quemsomos.html" class="btn-nav">Quem Somos</a>
+</div>
+
+</nav>
+
+<!-- MENU na LATERAL -->
+<aside id="menuLudica" class="menu-lateral">
+
+<h2>Tela inicial</h2>
+
+<div class="perfil-ludica">
+  <img src="midias/logoperfil.png" alt="Perfil">
+  <a href="#" class="link-perfil">Perfil</a>
+</div>
+
+
+<div class="menu-jogos">
+
+   <a href="telasentidosmagicos.html" class="toggle-btn">
+    ▶ Cinco Sentidos Mágicos
+</a>
+
+  <ul class="lista-jogos">
+    <li>Olhinhos Curiosos</li>
+    <li>Mãozinhas Mágicas</li>
+    <li>Escute e Descubra</li>
+    <li>O Nariz Detetive</li>
+    <li>Prove na Imaginação</li>
+  </ul>
+</div> 
+
+<h4><a href="teladragao.html">Respirando com o dragão</a></h4>
+<h4><a href="telaidentificandoemocoes.html">Identificando as emoções</a></h4>
+
+
+<a href="conheça.html" class="sair-menu"> Sair</a>
+
+</aside>
+
+
+ <!-----inicio do carrosel---->
+ <!--tela inicial e botões laterais para passar as imagens-->
+<div class="tela-sentidos">
+<div class="sentidos-container">
+    <button class="botao-esquerda" onclick="mudarImagem(-1)"><</button>
+    <img id="carrossel" src="../midias/telainicialCMS.png" alt="carrossel de imagens">
+    <button class="botao-direita" onclick="mudarImagem(1)">></button>
+  </div>
+
+  <!---parte dos elementos do background(sem as flores)--->
+
+  <div class="fonte">
+
+    <img src="MIDIAS/titulocsm.png" class="titulo" alt="Titulo">
+
+  </div>
+
+  <div class="elementos">
+
+    <img src="midias/abelha.png" class="abelha" alt="Abelha">
+
+  </div>
+
+  
+  <!--parte da descrição do jogo-->
+<div class="animais1">
+  <h3>1. Toque nos Animais</h3>
+  <p class="texto">
+    <strong>Descrição:</strong>
+    Neste jogo, as crianças estarão em um cenário de floresta, onde deverão observar e clicar em cinco animais diferentes. Cada vez que um objeto for identificado, ele será destacado com um contorno colorido e um som de confirmação. Essa interação incentiva a percepção visual, a atenção plena e o foco no presente, ajudando no controle da ansiedade.
+    </p>
+    
+    <p class="texto">
+    <strong>Objetivo:</strong>  
+     Estimular a observação atenta do ambiente, promovendo a concentração e auxiliando no relaxamento através do engajamento visual e interativo.
+    </p>
+  </div>
+
+
+  <div class="toque1">
+    <h3>2. Descubra com o Toque</h3>
+    <p class="texto">
+<strong>Descrição:</strong>
+   A criança interagirá com quatro animais na tela, que reagem ao toque realizando movimentos específicos, como pular ou se mexer. Essa experiência estimula a sensação de controle e previsibilidade, elementos essenciais para reduzir a ansiedade e aumentar o senso de segurança emocional.
+    </p>
+
+    <p class="texto">
+    <strong>Objetivo:</strong>
+    Promover a interação sensorial por meio do toque, estimulando a percepção corporal, a curiosidade e o sentimento de controle sobre o ambiente.
+  </p>
+  </div>
+
+
+  <div class="brinquedoteca1">
+    <h3>3. Brinquedoteca Sonora</h3>
+
+    <p class="texto">
+   <strong>Descrição:</strong>
+    Neste jogo, as crianças estarão em uma brinquedoteca virtual com seis brinquedos diferentes. Ao clicar em cada um, um som é reproduzido, podendo ser de animais, instrumentos musicais ou objetos comuns do dia a dia. A criança deverá identificar corretamente três sons, associando-os ao brinquedo correspondente.
+  </p>
+
+  
+    <p class="texto">
+      <strong>Objetivo:</strong>
+    Estimular a percepção auditiva e o reconhecimento de sons familiares, ajudando a criança a focar no presente e exercitar a atenção plena, reduzindo os sintomas de ansiedade.
+  </p>
+  </div>
+  
+
+
+  <div class="cheiro1">
+    <h3>4. Descubra com o Cheiro</h3>
+
+    <p class="texto">
+    <strong>Descrição:</strong>
+     A criança será desafiada a identificar aromas de diferentes alimentos. Um comando indicará um cheiro específico (por exemplo, "Cheiro doce"), e a criança deverá clicar no alimento correspondente entre as quatro opções disponíveis. Essa interação ativa a memória olfativa e a associação sensorial.
+</p>
+
+
+    <p class="texto">
+  <strong>Objetivo:</strong>
+   Aprimorar a identificação de odores e estimular a atenção sensorial, criando uma experiência de foco e tranquilidade que auxilia na regulação emocional.
+  </p>
+  </div>
+
+
+
+  <div class="sabor1">
+    <h3>5. Melhor Sabor</h3>
+    <p class="texto">
+    <strong>Descrição:</strong>
+    Neste jogo, a girafinha interativa faz uma pergunta simples e envolvente, como "Qual sua comida favorita agora?", oferecendo quatro opções de resposta. A criança escolhe a opção que mais se relaciona com o que sente no momento, estimulando a imaginação e a conexão com suas preferências.
+</p>
+
+
+    <p class="texto">
+      <strong>Objetivo:</strong>
+   Auxiliar a criança a identificar e expressar seus gostos, trabalhando a percepção emocional e promovendo um momento de reflexão leve e positivo.
+  </p>
+</div>
+
+
+<!--espaço entre o texto e o rodapé-->
+<div class="espaço-final"></div>
+
+<!--fundo das flores-->
+<img src="midias/flores.png" class="flores" alt="Flores">
+
+
+
+<!--rodapé-->
+ <footer class="footer">
+    <div class="footer-container">
+
+        <!-- aqui coloquei as info que vão ficar ao lado esquerdo -->
+         <div class="footer-left">
+            <p>Telefone: 11 94724-6510</p>
+            <p>Email: ludicakidsFatec@gmail.com</p>
+         </div>
+
+         <!-- agora lado direito -->
+          <div class="footer-right">
+            <div class="logo-container">
+                <img src="midias/logo2.png" alt="Logo Girafa LúdicaKids">
+            </div>
+
+            <p class="footer-right-text">
+                Brincar para acalmar, aprender para crescer!
+            </p>
+
+          </div>
+
+    </div>
+</footer>
+
+<script src="js/script.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
+
+
+
+////////////////////TELA cadastroatualizado.html
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cadastro</title>
+
+<link rel="stylesheet"
+href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+
+<link rel="stylesheet" href="CSS/cadastro.css">
+<link rel="icon" href="midias/iconlogo.png">
+
+</head>
+
+<body class="cadastro-page">
+    
+<div class="container-cadastro">
+
+<div class="box-cadastro">
+
+<a href="index.html" class="btn-voltar">
+<i class="fas fa-arrow-left"></i>
+</a>
+
+<img src="midias/logo.png" class="logo-appcadastro">
+
+<h2 class="title title-second">
+Crie sua conta
+</h2>
+
+<p class="description description-second">
+Preencha os seus dados:
+</p>
+
+<form class="form" id="loginForm">
+
+<label class="label-input">
+<i class="far fa-user icon-modify"></i>
+<input type="text" placeholder="Nome completo do responsável" required>
+</label>
+
+<label class="label-input">
+<i class="fas fa-id-card icon-modify"></i>
+<input type="text" placeholder="CPF do responsável" required>
+</label>
+
+<label class="label-input">
+<i class="fas fa-id-badge icon-modify"></i>
+<input type="text" placeholder="RG do responsável" required>
+</label>
+
+<label class="label-input">
+<i class="fas fa-map-marker-alt icon-modify"></i>
+<input type="text" placeholder="Endereço" required>
+</label>
+
+<label class="label-input">
+<i class="fas fa-city icon-modify"></i>
+<input type="text" placeholder="Cidade" required>
+</label>
+
+<label class="label-input">
+<i class="far fa-envelope icon-modify"></i>
+<input type="email" placeholder="Email do responsável" required>
+</label>
+
+<label class="label-input">
+<i class="fas fa-phone icon-modify"></i>
+<input type="tel" placeholder="Celular do responsável" required>
+</label>
+
+<label class="label-input">
+<i class="fas fa-lock icon-modify"></i>
+<input type="password" placeholder="Senha" required>
+</label>
+
+<button type="button" class="btn btn-second" onclick="adicionarCrianca()">
+Adicionar mais uma criança
+</button>
+
+<div id="criancas-container"></div>
+
+<button type="submit" class="btn btn-second">
+Cadastrar
+</button>
+
+</form>
+
+</div>
+</div>
+
+<!-- JS -->
+<script src="js/app.js"></script>
+
+    </div>
+
+
+</body>
+</html>
+
+
+
+////////////////////CSS DO cadastro.css
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+/* parte que fiz do cadastro */
+
+body.cadastro-page {
+  font-family: Arial, 'Open Sans',sans-serif;
+
+
+  background: url("../MIDIAS/fundocadastroatualizado.png") no-repeat;
+
+  background-size: cover; 
+  background-position: center bottom; 
+
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-cadastro{
+flex:1;
+display:flex;
+justify-content:center;
+align-items:flex-start;
+padding:40px 10px;
+}
+
+.box-cadastro{
+background: rgba(255, 255, 255, 0.9);
+backdrop-filter: blur(10px);
+padding:40px;
+border-radius:15px;
+box-shadow:0 10px 30px rgba(0,0,0,0.1);
+width:90%;
+max-width:420px;
+text-align:center;
+position:relative;
+}
+
+.logo-appcadastro{
+width:100%;
+max-width:180px;
+margin:0 auto 25px;
+display:block;
+}
+
+.title{
+font-size:28px;
+font-weight:bold;
+}
+
+.title-second{
+color:#004aad;
+}
+
+.description{
+font-size:14px;
+line-height:25px;
+}
+
+.description-second{
+color:#7f8c8d;
+}
+
+.form{
+display:flex;
+flex-direction:column;
+width:100%;
+}
+
+.label-input{
+background:#ecf0f1;
+display:flex;
+align-items:center;
+margin:8px 0;
+padding:0 5px;
+border-radius:8px;
+}
+
+.form input{
+height:45px;
+width:100%;
+border:none;
+background:transparent;
+padding-left:10px;
+outline:none;
+}
+
+.icon-modify{
+color:#7f8c8d;
+padding:0 5px;
+}
+
+.btn{
+border-radius:15px;
+text-transform:uppercase;
+color:#fff;
+font-size:11px;
+padding:10px 20px;
+cursor:pointer;
+font-weight:bold;
+border:none;
+margin-top:10px;
+}
+
+.btn-second{
+background:#004aad;
+border:1px solid #004aad;
+}
+
+.btn-second:hover{
+background:#fff;
+color:#004aad;
+}
+
+.btn-voltar{
+position:absolute;
+top:15px;
+left:15px;
+background:#004aad;
+color:white;
+width:40px;
+height:40px;
+display:flex;
+align-items:center;
+justify-content:center;
+border-radius:50%;
+text-decoration:none;
+font-size:18px;
+box-shadow:0 4px 10px rgba(0,0,0,0.2);
+transition:0.3s;
+}
+
+.btn-voltar:hover{
+background:#00337a;
+transform:scale(1.1);
+}
+
+.box-crianca{
+margin-top:15px;
+padding-top:10px;
+border-top:1px solid #ddd;
+}
+
+.botoes-crianca{
+display:flex;
+gap:10px;
+margin-top:10px;
+justify-content:center;
+}
+
+.botoes-crianca button{
+padding:6px 12px;
+border:none;
+border-radius:6px;
+cursor:pointer;
+background:#004aad;
+color:white;
+}
+
+@media (max-width:600px){
+
+.title{
+font-size:22px;
+}
+
+.box-cadastro{
+padding:25px;
+}
+
+.btn{
+width:100%;
+}
+
+}
+
+///////////////////////////////app.js do cadastro 
+
+// animação que aprendi no video da movimentação
+
+var btnSignin = document.querySelector("#signin");
+var btnSignup = document.querySelector("#signup");
+
+var body = document.querySelector("body");
+
+if (btnSignin) {
+    btnSignin.addEventListener("click", function () {
+        body.className = "sign-in-js";
+    });
+}
+
+if (btnSignup) {
+    btnSignup.addEventListener("click", function () {
+        body.className = "sign-up-js";
+    });
+}
+
+
+// a parte do lo9gin apos a animação de movimento
+
+const loginForm = document.getElementById("loginForm");
+
+if (loginForm) {
+    loginForm.addEventListener("submit", function (e) {
+
+        e.preventDefault();
+
+        const email = document.getElementById("loginEmail")?.value || "";
+
+        alert("Login realizado!\n\nEmail: " + email);
+
+    });
+}
+
+// parte do cadastro na animação
+
+const signupForm = document.getElementById("signupForm");
+
+if (signupForm) {
+    signupForm.addEventListener("submit", function (e) {
+
+        e.preventDefault();
+
+        const name = document.getElementById("signupName")?.value || "";
+        const email = document.getElementById("signupEmail")?.value || "";
+
+        alert("Conta criada com sucesso!\n\nNome: " + name + "\nEmail: " + email);
+
+    });
+}
+
+// opção de adicionar crianças
+
+let contadorCriancas = 1;
+
+function adicionarCrianca() {
+
+    const container = document.getElementById("criancas-container");
+
+    if (!container) return;
+
+    const novaCrianca = document.createElement("div");
+
+    novaCrianca.classList.add("box-crianca");
+
+    novaCrianca.innerHTML = `
+
+<h3>Criança ${contadorCriancas}</h3>
+
+<label class="label-input">
+<i class="fas fa-child icon-modify"></i>
+<input type="text" placeholder="Nome da criança" required>
+</label>
+
+<label class="label-input">
+<i class="fas fa-id-card icon-modify"></i>
+<input type="text" placeholder="CPF da criança" required>
+</label>
+
+<label class="label-input">
+<i class="fas fa-calendar icon-modify"></i>
+<input type="date" required>
+</label>
+
+<div class="botoes-crianca">
+
+<button type="button" onclick="removerCrianca(this)">
+❌
+</button>
+
+<button type="button" onclick="adicionarCrianca()">
+➕
+</button>
+
+</div>
+
+`;
+
+    container.appendChild(novaCrianca);
+
+    contadorCriancas++;
+
+}
+
+// essa parte remove a criança que foi adicionada
+
+function removerCrianca(botao) {
+
+    const box = botao.closest(".box-crianca");
+
+    if (box) {
+        box.remove();
+    }
+
+}
+// abrir o menu
+
+function abrirMenuLudica(){
+
+const menu = document.getElementById("menuLudica")
+
+if(!menu) return
+
+menu.classList.toggle("ativo")
+
+}
+// menu da parte lateral
+function abrirMenuLudica() {
+  const menu = document.getElementById("menuLudica");
+  if (!menu) return;
+  menu.classList.toggle("ativo");
+}
+
+// submenu dos jogos
+const botao = document.querySelector(".toggle-btn");
+const lista = document.querySelector(".lista-jogos");
+
+if (botao && lista) {
+  botao.addEventListener("click", () => {
+    const aberto = lista.style.display === "block";
+
+    lista.style.display = aberto ? "none" : "block";
+
+    botao.textContent = aberto
+      ? "▶ Cinco Sentidos Mágicos"
+      : "▼ Cinco Sentidos Mágicos";
+  });
+}
+
+////////////parte do js do index e cadatsro junto 
+
+
+/* ========================= */
+/* ANIMAÇÃO LOGIN / CADASTRO */
+/* ========================= */
+
+var btnSignin = document.querySelector("#signin");
+var btnSignup = document.querySelector("#signup");
+
+var body = document.querySelector("body");
+
+if (btnSignin) {
+    btnSignin.addEventListener("click", function () {
+        body.className = "sign-in-js";
+    });
+}
+
+if (btnSignup) {
+    btnSignup.addEventListener("click", function () {
+        body.className = "sign-up-js";
+    });
+}
+
+
+/* ========================= */
+/* LOGIN */
+/* ========================= */
+
+const loginForm = document.getElementById("loginForm");
+
+if (loginForm) {
+    loginForm.addEventListener("submit", function (e) {
+
+        e.preventDefault();
+
+        const email = document.getElementById("loginEmail")?.value || "";
+
+        alert("Login realizado!\n\nEmail: " + email);
+
+    });
+}
+
+
+/* ========================= */
+/* CADASTRO */
+/* ========================= */
+
+const signupForm = document.getElementById("signupForm");
+
+if (signupForm) {
+    signupForm.addEventListener("submit", function (e) {
+
+        e.preventDefault();
+
+        const name = document.getElementById("signupName")?.value || "";
+        const email = document.getElementById("signupEmail")?.value || "";
+
+        alert("Conta criada com sucesso!\n\nNome: " + name + "\nEmail: " + email);
+
+    });
+}
+
+
+/* ========================= */
+/* ADICIONAR CRIANÇAS */
+/* ========================= */
+
+let contadorCriancas = 1;
+
+function adicionarCrianca() {
+
+    const container = document.getElementById("criancas-container");
+
+    if (!container) return;
+
+    const novaCrianca = document.createElement("div");
+
+    novaCrianca.classList.add("box-crianca");
+
+    novaCrianca.innerHTML = `
+
+<h3>Criança ${contadorCriancas}</h3>
+
+<label class="label-input">
+<i class="fas fa-child icon-modify"></i>
+<input type="text" placeholder="Nome da criança" required>
+</label>
+
+<label class="label-input">
+<i class="fas fa-id-card icon-modify"></i>
+<input type="text" placeholder="CPF da criança" required>
+</label>
+
+<label class="label-input">
+<i class="fas fa-calendar icon-modify"></i>
+<input type="date" required>
+</label>
+
+<div class="botoes-crianca">
+
+<button type="button" onclick="removerCrianca(this)">
+❌
+</button>
+
+<button type="button" onclick="adicionarCrianca()">
+➕
+</button>
+
+</div>
+
+`;
+
+    container.appendChild(novaCrianca);
+
+    contadorCriancas++;
+
+}
+
+
+/* ========================= */
+/* REMOVER CRIANÇA */
+/* ========================= */
+
+function removerCrianca(botao) {
+
+    const box = botao.closest(".box-crianca");
+
+    if (box) {
+        box.remove();
+    }
+
+}
+
+/* MENU LUDICA */
+
+function abrirMenuLudica(){
+
+const menu = document.getElementById("menuLudica")
+
+if(!menu) return
+
+menu.classList.toggle("ativo")
+
+}/* MENU LATERAL */
+function abrirMenuLudica() {
+  const menu = document.getElementById("menuLudica");
+  if (!menu) return;
+  menu.classList.toggle("ativo");
+}
+
+/* SUBMENU JOGOS */
+const botao = document.querySelector(".toggle-btn");
+const lista = document.querySelector(".lista-jogos");
+
+if (botao && lista) {
+  botao.addEventListener("click", () => {
+    const aberto = lista.style.display === "block";
+
+    lista.style.display = aberto ? "none" : "block";
+
+    botao.textContent = aberto
+      ? "▶ Cinco Sentidos Mágicos"
+      : "▼ Cinco Sentidos Mágicos";
+  });
+}
+/* SUBMENU JOGOS */
+
+// function abrirJogos(){  // talvez seja necessario retirar essa parte
+
+// const jogos = document.getElementById("listaJogos")
+
+        // if(!jogos) return 
+
+// jogos.classList.toggle("ativo")
+
+// }
+
+
+////////////////////index
+
+
+html:
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login</title>
+<!-- o css coloquei externo junto com as outras páginas -->
+<link rel="stylesheet" href="css/index.css">
+<link rel="icon" href="midias/iconlogo.png">
+
+
+<link rel="stylesheet"
+href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+
+</head>
+<body>
+    <!-- Lateral esquerda de bem vindo de volta para o login-->
+<div class="container">
+
+<div class="content first-content">
+
+<div class="first-column"> 
+
+<img src="midias/logo.png" alt="Logo do App" class="logo-app"> 
+<h2 class="title title-primary">Olá! <br>
+Bem-vindo de volta.</h2>
+
+<button id="signin" class="btn btn-primary">
+Entrar
+</button>
+
+</div>
+<!-- Lateral direita de criar conta  -->
+<div class="second-column">
+
+<h2 class="title title-second">Crie sua conta</h2>
+
+<p class="description description-second">
+Clique abaixo!
+</p>
+
+<!-- leva a tela de cadastro -->
+<a href="cadastraratualizado.html" class="btn btn-second">Cadastrar</a>
+
+</div>
+
+</div>
+
+<div class="content second-content">
+
+<div class="first-column">
+
+<h3 class="title title-primary">Ainda Não tem uma conta?<br>
+    Cadastre-se agora e venha se divertir!</h3>
+
+
+<br>
+<a href="cadastraratualizado.html" class="btn btn-primary">Cadastrar</a>
+<!-- os dois botões de cadastrar estão como "btn btn-primary" para mesma edição no css  -->
+
+</div>
+<!-- Quando apertou em ENTRAR na primeira pagina ele tem a aniação que leva a esta tela: -->
+<div class="second-column">
+
+<h2 class="title title-second">
+Insira seu login
+</h2>
+
+<!-- opção de entrar/login -->
+<form class="form" id="loginForm">
+
+<label class="label-input">
+<i class="far fa-envelope icon-modify"></i>
+<input type="email" id="loginEmail" placeholder="Email" required>
+</label>
+
+<label class="label-input">
+<i class="fas fa-lock icon-modify"></i>
+<input type="password" id="loginPassword" placeholder="Password" required>
+</label>
+
+<a class="password" href="#">
+<u>Esqueceu sua senha?</u>
+</a>
+
+<button type="submit" class="btn btn-second">
+Entrar
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</div>
+<!-- o JS esta externo -->
+<script src="js/app.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+css: 
+*{
+margin:0;
+padding:0;
+box-sizing: border-box;
+}
+
+body{
+font-family: Arial, 'Open Sans',sans-serif;
+background-color:#ecf0f1;
+}
+
+/*  essa é a parte do login */
+.container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height:100vh;
+    padding:20px;
+}
+
+.content{
+    background: #cbe0ed;
+    border-radius:15px;
+    width:960px;
+    max-width:95%;
+    height:500px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:relative;
+    overflow:hidden;
+}
+
+.content::before{
+content:"";
+position:absolute;
+background:#004aad;
+width:40%;
+height:100%;
+left:0;
+border-top-left-radius:15px;
+border-bottom-left-radius:15px;
+}
+
+/*  essa é a parte dos titulos */
+
+.title{
+    font-size: 28px;
+    font-weight: bold;
+}
+
+
+.title-primary{
+font-size:17px;
+color:#fff;
+}
+
+.title-second{
+color:#004aad;
+}
+
+/* parte das descrições */
+
+.description{
+    font-size:14px;
+    font-weight:300;
+    line-height:30px;
+}
+
+.description-primary{
+    color: #fff
+}
+
+.description-second{
+    color:#7f8c8d;
+}
+
+/* parte que adicionei as edições dos botões */
+
+.btn{
+border-radius:15px;
+text-transform:uppercase;
+color:#fff;
+font-size:11px;
+padding:10px 40px;
+cursor:pointer;
+font-weight:bold;
+border:none;
+margin-top:1rem;
+}
+
+.btn-primary{
+background:transparent;
+border:1px solid #fff;
+transition:.5s;
+}
+
+.btn-primary:hover{
+background:#fff;
+color:#004aad;
+}
+
+.btn-second{
+background:#004aad;
+border:1px solid #004aad;
+transition:.5s;
+}
+
+.btn-second:hover{
+background:#fff;
+color:#004aad;
+}
+
+/* parte das colunas */
+
+.firt-content{
+    display:flex;
+}
+
+
+.first-content .second-column{
+z-index:11;
+}
+
+.first-column{
+text-align:center;
+width:40%;
+z-index:10;
+padding:20px;
+}
+
+.second-column{
+width:60%;
+display:flex;
+flex-direction:column;
+align-items:center;
+padding:20px;
+}
+
+/*  os form */
+
+.form{
+    display:flex;
+    flex-direction:column;
+    width:100%;
+    max-width:350px;
+}
+
+
+
+.form input{
+height:45px;
+width:100%;
+border:none;
+background:#ecf0f1;
+padding-left:10px;
+}
+
+.label-input{
+background:#ecf0f1;
+display:flex;
+align-items:center;
+margin:8px 0;
+padding:0 5px;
+}
+
+.icon-modify{
+color:#7f8c8d;
+padding:0 5px;
+}
+
+.password{
+color:#34495e;
+font-size:14px;
+margin:15px 0;
+text-align:center;
+}
+
+/* parte do second content */
+
+
+.second-content{
+position:absolute;
+display:flex;
+
+
+}
+
+.second-content .first-column{
+order:2;
+z-index:-1;
+}
+
+.second-content .second-column{
+order:1;
+z-index:-1;
+color:#cbe0ed
+}
+
+/* animação */
+
+.sign-in-js .first-content .first-column{
+z-index:-1;
+}
+
+.sign-in-js .second-content .second-column{
+z-index:11;
+
+}
+
+.sign-in-js .second-content .first-column{
+z-index:13;
+}
+
+.sign-in-js .content::before{
+left:60%;
+border-top-left-radius:0;
+border-bottom-left-radius:0;
+border-top-right-radius:15px;
+border-bottom-right-radius:15px;
+animation:slidein 1.3s;
+z-index:12;
+}
+
+.sign-up-js .content::before{
+animation:slideout 1.3s;
+z-index:12;
+}
+
+.sign-up-js .second-content .first-column,
+.sign-up-js .second-content .second-column{
+z-index:-1;
+}
+
+.sign-up-js .first-content .second-column{
+z-index:11;
+}
+
+.sign-up-js .first-content .first-column{
+z-index:13;
+}
+
+.sign-in-js .first-content .second-column{
+z-index:-1;
+position:relative;
+animation:deslocamentoEsq 1.3s;
+}
+
+.sign-up-js .second-content .second-column{
+position:relative;
+z-index:-1;
+animation:deslocamentoDir 1.3s;
+}
+
+
+/* parte do deslocamento que aprendi com o vídeo do youtube */
+
+
+
+@keyframes deslocamentoEsq{
+
+from{
+left:0;
+opacity:1;
+z-index:12;
+}
+
+25%{
+left:-80px;
+opacity:.5;
+}
+
+50%{
+left:-100px;
+opacity:.2;
+}
+
+to{
+left:-110px;
+opacity:0;
+z-index:-1;
+}
+
+}
+
+@keyframes deslocamentoDir{
+
+from{
+left:0;
+z-index:12;
+}
+
+25%{
+left:80px;
+}
+
+50%{
+left:100px;
+}
+
+to{
+left:110px;
+z-index:-1;
+}
+
+}
+
+@keyframes slidein{
+
+from{
+left:0;
+width:40%;
+}
+
+25%{
+left:5%;
+width:50%;
+}
+
+50%{
+left:25%;
+width:60%;
+}
+
+75%{
+left:45%;
+width:50%;
+}
+
+to{
+left:60%;
+width:40%;
+}
+
+}
+
+@keyframes slideout{
+
+from{
+left:60%;
+width:40%;
+}
+
+25%{
+left:45%;
+width:50%;
+}
+
+50%{
+left:25%;
+width:60%;
+}
+
+75%{
+left:5%;
+width:50%;
+}
+
+to{
+left:0;
+width:40%;
+}
+
+}
+
+/* logo */
+
+.logo-app{
+    width:10em;     
+    max-width:72%;
+    height:auto;
+    margin:0 auto 20px;
+    display:block;
+}
+
+
+.logo-appcadastro{
+width:100%;
+max-width:180px;
+height:auto;
+margin:0 auto 25px;
+display:block;
+}
+
+/* parte do cadastro  */
+
+
+.cadastro-page{
+background-image: url("../MIDIAS/");
+
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+min-height: 100vh;
+}
+
+
+.container-cadastro{
+display:flex;
+justify-content:center;
+align-items:flex-start;
+min-height:100vh;
+padding:40px 10px;
+}
+
+.btn-voltar{
+position:absolute;
+top:15px;
+left:15px;
+
+background:#004aad;
+color:white;
+
+width:40px;
+height:40px;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+border-radius:50%;
+text-decoration:none;
+
+font-size:18px;
+
+box-shadow:0 4px 10px rgba(0,0,0,0.2);
+transition:0.3s;
+}
+
+.btn-voltar:hover{
+background:#00337a;
+transform:scale(1.1);
+}
+
+
+
+.box-cadastro .form{
+width:100%;
+}
+
+
+////////////////////////////////////////////comentarios do quem Somos
+
+
+
+
+<!-- =======
+
+        </div>
+
+        <div class="parte-baixo">
+
+            <div class="projeto">
+                <img src="midias/projeto.png" alt="Projeto">
+
+                <p class="texto">
+                    Criamos este projeto com intuito de proporcionar uma melhor qualidade de vida 
+                    para as crianças que sofrem ou podem sofrer com o transtorno de ansiedade infantil.
+                </p>
+            </div>
+
+            <div class="girafa">
+                <img src="midias/girafaquemsomos.png" alt="Girafa">
+            </div>
+
+        </div>
+
+    </section>
+
+
+        <footer class="footer">
+        <div class="footer-container">
+
+            <!- aqui coloquei as info que vão ficar ao lado esquerdo -->
+            <!-- <div class="footer-left">
+                <p>Telefone: 11 94724-6510</p>
+                <p>Email: ludicakidsFatec@gmail.com</p>
+            </div> -->
+
+            <!-- agora lado direito -->
+            <!-- <div class="footer-right">
+                <div class="logo-container">
+                    <img src="midias/logo2.png" alt="Logo Girafa LúdicaKids">
+                </div>
+
+                <p class="footer-right-text">
+                    Brincar para acalmar, aprender para crescer!
+                </p>
+
+            </div>
+
+        </div>
+    </footer>
+
+        <script src="js/menu.js"></script> -->
+
+
+//////////////////////////tela menu html apagada
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lúdica Kids</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: Arial, sans-serif;
+}
+
+/* menu atualizado  */
+.menu-ludica{
+    margin:1;
+    background: #a8c0cc;
+    overflow-x: hidden;
+}
+
+/* NAV */
+.menu-ludica .nav-ludica{
+background:#f2f2f2;
+height:4.5rem;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:0 2%;
+}
+
+/* esquerda */
+.menu-ludica .nav-esquerda{
+    display:flex;
+    align-items:center;
+    gap:1rem;
+}
+
+/* botão menu */
+.menu-ludica .btn-menu{
+font-size:2rem;
+background:none;
+border:none;
+cursor:pointer;
+}
+
+/* logo RESPONSIVA */
+.menu-ludica .logo-ludica{
+height:auto;
+width:12rem;
+}
+
+/* direita */
+.menu-ludica .nav-direita{
+    display:flex;
+    gap:1rem;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+/* botões */
+.menu-ludica .btn-nav{
+padding:0.5rem 1.5rem;
+border-radius:2rem;
+text-decoration:none;
+color:black;
+font-weight:bold;
+}
+
+/* cores */
+.menu-ludica .nav-direita a:nth-child(1){
+background:#a8c0cc;
+}
+
+.menu-ludica .nav-direita a:nth-child(2){
+background:#f3d77a;
+}
+
+.menu-ludica .nav-direita a:nth-child(3){
+background:#f8c8dc;
+}
+
+/* menu lateral */
+.menu-ludica .menu-lateral{
+position:fixed;
+top:0;
+left:-20rem;
+width:18rem;
+height:100%;
+background:#e9e7df;
+padding:1rem;
+transition:0.4s;
+border-radius:0 1.5rem 1.5rem 0;
+overflow-y:auto;
+}
+
+.menu-ludica .menu-lateral.ativo{
+left:0;
+}
+
+/* textos */
+.menu-ludica h2{
+text-align:center;
+text-decoration:underline;
+}
+
+.perfil-ludica img { 
+  width: 100%;
+  max-width: 10rem;
+  height: auto;
+}
+
+.menu-ludica .perfil-ludica {
+  display: flex;
+  align-items: center;
+  gap:1rem;
+}
+
+/* lista */
+.menu-ludica .lista-jogos{
+padding:1rem;
+border-radius:1rem;
+margin-top:1rem;
+display:none;
+}
+
+.menu-ludica .lista-jogos.ativo{
+display:block;
+}
+
+.menu-ludica ul{
+padding-left:1.5rem;
+}
+
+.menu-ludica h4{
+text-decoration:underline;
+margin-top:1rem;
+}
+
+/* sair */
+.menu-ludica .sair-menu{
+display:block;
+margin-top:2rem;
+text-align:center;
+font-weight:bold;
+text-decoration:underline;
+}
+
+/* RESPONSIVIDADE EXTRA */
+@media (max-width: 768px){
+    
+    .menu-ludica .nav-direita{
+        gap:0.5rem;
+    }
+
+    .menu-ludica .btn-nav{
+        padding:0.4rem 1rem;
+        font-size:0.9rem;
+    }
+
+    .menu-ludica .logo-ludica{
+        width:9rem;
+    }
+}
+</style>
+
+</head>
+
+<body class="menu-ludica">
+
+<nav class="nav-ludica">
+
+<div class="nav-esquerda">
+<button class="btn-menu" onclick="abrirMenuLudica()">&#9776;</button>
+<img src="midias/imgbubbamenu.png" class="logo-ludica">
+</div>
+
+<div class="nav-direita">
+<a href="cadastro.html" class="btn-nav">Cadastro</a>
+<a href="index.html" class="btn-nav">Login</a>
+<a href="quemsomos.html" class="btn-nav">Quem Somos</a>
+</div>
+
+</nav>
+
+<aside id="menuLudica" class="menu-lateral">
+
+<h2>Tela inicial</h2>
+
+<div class="perfil-ludica">
+  <img src="midias/logoperfil.png" alt="Perfil">
+  <a href="telasentidosmagicos.html">Perfil</a>
+</div>
+
+<div class="menu-jogos">
+  <button class="toggle-btn">
+    ▶ Cinco Sentidos Mágicos
+  </button>
+
+  <ul class="lista-jogos">
+    <li>Olinhos Curiosos</li>
+    <li>Mãozinhas Mágicas</li>
+    <li>Escute e Descubra</li>
+    <li>O Nariz Detetive</li>
+    <li>Prove na Imaginação</li>
+  </ul>
+</div>
+
+<h4>Respirando com o dragão</h4>
+<h4>Identificando as emoções</h4>
+
+<a href="#" class="sair-menu">Sair</a>
+
+</aside>
+
+<div class="conteudo-ludica"></div>
+
+<script src="JS/app.js"></script>
+
+</body>
+</html>
+
+/////////////////rodape apagado
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Footer</title>
+    <link rel="stylesheet" href="CSS/footer.css">
+</head>
+
+<body>
+
+    <footer class="footer">
+    <div class="footer-container">
+
+        <!-- aqui coloquei as info que vão ficar ao lado esquerdo -->
+         <div class="footer-left">
+            <p>Telefone: 11 94724-6510</p>
+            <p>Email: ludicakidsFatec@gmail.com</p>
+         </div>
+
+         <!-- agora lado direito -->
+          <div class="footer-right">
+            <div class="logo-container">
+                <img src="midias/logo2.png" alt="Logo Girafa LúdicaKids">
+            </div>
+
+            <p class="footer-right-text">
+                Brincar para acalmar, aprender para crescer!
+            </p>
+
+          </div>
+
+    </div>
+</footer>
+
+</body>
+</html>
+
+
+//////////////////style.css apagado 
+
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Open Sans',sans-serif;
+background-color:#ecf0f1;
+}
+
+/*  essa é a parte do login */
+.container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height:100vh;
+    padding:20px;
+}
+
+.content{
+    background: #fff;
+    border-radius:15px;
+    width:960px;
+    max-width:95%;
+    height:500px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:relative;
+    overflow:hidden;
+}
+
+.content::before{
+content:"";
+position:absolute;
+background:#004aad;
+width:40%;
+height:100%;
+left:0;
+border-top-left-radius:15px;
+border-bottom-left-radius:15px;
+}
+
+/*  essa é a parte dos titulos */
+
+.title{
+    font-size: 28px;
+    font-weight: bold;
+}
+
+
+.title-primary{
+font-size:17px;
+color:#fff;
+}
+
+.title-second{
+color:#004aad;
+}
+
+/* parte das descrições */
+
+.description{
+    font-size:14px;
+    font-weight:300;
+    line-height:30px;
+}
+
+.description-primary{
+    color: #fff
+}
+
+.description-second{
+    color:#7f8c8d;
+}
+
+/* parte que adicionei as edições dos botões */
+
+.btn{
+border-radius:15px;
+text-transform:uppercase;
+color:#fff;
+font-size:11px;
+padding:10px 40px;
+cursor:pointer;
+font-weight:bold;
+border:none;
+margin-top:1rem;
+}
+
+.btn-primary{
+background:transparent;
+border:1px solid #fff;
+transition:.5s;
+}
+
+.btn-primary:hover{
+background:#fff;
+color:#004aad;
+}
+
+.btn-second{
+background:#004aad;
+border:1px solid #004aad;
+transition:.5s;
+}
+
+.btn-second:hover{
+background:#fff;
+color:#004aad;
+}
+
+/* parte das colunas */
+
+.firt-content{
+    display:flex;
+}
+
+
+.first-content .second-column{
+z-index:11;
+}
+
+.first-column{
+text-align:center;
+width:40%;
+z-index:10;
+padding:20px;
+}
+
+.second-column{
+width:60%;
+display:flex;
+flex-direction:column;
+align-items:center;
+padding:20px;
+}
+
+/*  os form */
+
+.form{
+    display:flex;
+    flex-direction:column;
+    width:100%;
+    max-width:350px;
+}
+
+
+
+.form input{
+height:45px;
+width:100%;
+border:none;
+background:#ecf0f1;
+padding-left:10px;
+}
+
+.label-input{
+background:#ecf0f1;
+display:flex;
+align-items:center;
+margin:8px 0;
+padding:0 5px;
+}
+
+.icon-modify{
+color:#7f8c8d;
+padding:0 5px;
+}
+
+.password{
+color:#34495e;
+font-size:14px;
+margin:15px 0;
+text-align:center;
+}
+
+/* parte do second content */
+
+
+.second-content{
+position:absolute;
+display:flex;
+}
+
+.second-content .first-column{
+order:2;
+z-index:-1;
+}
+
+.second-content .second-column{
+order:1;
+z-index:-1;
+}
+
+/* animação */
+
+.sign-in-js .first-content .first-column{
+z-index:-1;
+}
+
+.sign-in-js .second-content .second-column{
+z-index:11;
+}
+
+.sign-in-js .second-content .first-column{
+z-index:13;
+}
+
+.sign-in-js .content::before{
+left:60%;
+border-top-left-radius:0;
+border-bottom-left-radius:0;
+border-top-right-radius:15px;
+border-bottom-right-radius:15px;
+animation:slidein 1.3s;
+z-index:12;
+}
+
+.sign-up-js .content::before{
+animation:slideout 1.3s;
+z-index:12;
+}
+
+.sign-up-js .second-content .first-column,
+.sign-up-js .second-content .second-column{
+z-index:-1;
+}
+
+.sign-up-js .first-content .second-column{
+z-index:11;
+}
+
+.sign-up-js .first-content .first-column{
+z-index:13;
+}
+
+.sign-in-js .first-content .second-column{
+z-index:-1;
+position:relative;
+animation:deslocamentoEsq 1.3s;
+}
+
+.sign-up-js .second-content .second-column{
+position:relative;
+z-index:-1;
+animation:deslocamentoDir 1.3s;
+}
+
+
+/* parte do deslocamento que aprendi com o vídeo do youtube */
+
+
+
+@keyframes deslocamentoEsq{
+
+from{
+left:0;
+opacity:1;
+z-index:12;
+}
+
+25%{
+left:-80px;
+opacity:.5;
+}
+
+50%{
+left:-100px;
+opacity:.2;
+}
+
+to{
+left:-110px;
+opacity:0;
+z-index:-1;
+}
+
+}
+
+@keyframes deslocamentoDir{
+
+from{
+left:0;
+z-index:12;
+}
+
+25%{
+left:80px;
+}
+
+50%{
+left:100px;
+}
+
+to{
+left:110px;
+z-index:-1;
+}
+
+}
+
+@keyframes slidein{
+
+from{
+left:0;
+width:40%;
+}
+
+25%{
+left:5%;
+width:50%;
+}
+
+50%{
+left:25%;
+width:60%;
+}
+
+75%{
+left:45%;
+width:50%;
+}
+
+to{
+left:60%;
+width:40%;
+}
+
+}
+
+@keyframes slideout{
+
+from{
+left:60%;
+width:40%;
+}
+
+25%{
+left:45%;
+width:50%;
+}
+
+50%{
+left:25%;
+width:60%;
+}
+
+75%{
+left:5%;
+width:50%;
+}
+
+to{
+left:0;
+width:40%;
+}
+
+}
+
+/* logo */
+
+.logo-app{
+    width:250px;     
+    max-width:80%;
+    height:auto;
+    margin:0 auto 20px;
+    display:block;
+}
+
+
+.logo-appcadastro{
+width:100%;
+max-width:180px;
+height:auto;
+margin:0 auto 25px;
+display:block;
+}
+
+/* parte do cadastro  */
+
+
+.cadastro-page{
+background-image: url("../MIDIAS/");
+
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+min-height: 100vh;
+}
+
+
+.container-cadastro{
+display:flex;
+justify-content:center;
+align-items:flex-start;
+min-height:100vh;
+padding:40px 10px;
+}
+
+.btn-voltar{
+position:absolute;
+top:15px;
+left:15px;
+
+background:#004aad;
+color:white;
+
+width:40px;
+height:40px;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+border-radius:50%;
+text-decoration:none;
+
+font-size:18px;
+
+box-shadow:0 4px 10px rgba(0,0,0,0.2);
+transition:0.3s;
+}
+
+.btn-voltar:hover{
+background:#00337a;
+transform:scale(1.1);
+}
+
+
+
+.box-cadastro .form{
+width:100%;
+}
+
+/* no cadastro tem o adicionar crianças que tmabém aprendi por vídeo no youtube */
+
+
+.box-crianca{
+margin-top:15px;
+padding-top:10px;
+border-top:1px solid #ddd;
+}
+
+.botoes-crianca{
+display:flex;
+gap:10px;
+margin-top:10px;
+justify-content:center;
+}
+
+.botoes-crianca button{
+padding:6px 12px;
+border:none;
+border-radius:6px;
+cursor:pointer;
+background:#004aad;
+color:white;
+}
+
+.botoes-crianca button:hover{
+background:#00337a;
+}
+
+/* para ser responsivo tmabem foi baseado em estudos externos */
+
+@media (max-width:900px){
+
+.content{
+flex-direction:column;
+height:auto;
+}
+
+.content::before{
+display:none;
+}
+
+.first-column,
+.second-column{
+width:100%;
+}
+
+}
+
+@media (max-width:600px){
+
+.title{
+font-size:22px;
+}
+
+.box-cadastro{
+padding:25px;
+}
+
+.btn{
+width:100%;
+}
+
+}
+
+/* menu do ludica */
+
+.menu-ludica{
+    margin:0;
+    font-family: Arial;
+    background: #a8c0cc;
+    overflow-x: hidden;
+}
+
+/* parte do nav  */
+
+
+
+.menu-ludica .nav-ludica{
+
+background:#f2f2f2;
+
+height:70px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:space-between;
+
+padding:0 20px;
+
+
+
+}
+
+/* parte esquerda */
+.menu-ludica .nav-esquerda{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    overflow: hidden;
+
+}
+
+/* o menu parte do botão */
+
+
+
+.menu-ludica .btn-menu{
+
+font-size:30px;
+background:none;
+border:none;
+cursor:pointer;
+
+position:relative;
+z-index:30;
+
+}
+
+/* parte da logo na nova versão */
+
+.menu-ludica .logo-ludica{
+
+
+height:15em;
+width:19em;
+
+margin-left:-129px;
+margin-top:83px;
+
+position:relative;
+z-index:1;
+
+}
+
+/* botão da direita */
+
+.menu-ludica .nav-direita{
+    display:flex;
+    gap:15px;
+}
+
+
+/* botões da parte nav */
+
+.menu-ludica .btn-nav{
+
+background:#ddd;
+
+padding:8px 15px;
+
+border-radius:10px;
+
+text-decoration:none;
+
+color:black;
+
+font-weight:bold;
+
+}
+
+/* Menu da lateral */
+
+.menu-ludica .menu-lateral{
+
+position:fixed;
+
+top:0;
+left:-320px;
+
+width:300px;
+height:100%;
+
+background:#e9e7df;
+
+padding:15px;
+
+transition:0.4s;
+
+border-radius:0 20px 20px 0;
+
+z-index:20;
+
+overflow-y:auto;
+
+}
+
+
+/* Menu quando abre */
+
+.menu-ludica .menu-lateral.ativo{
+
+left:0;
+
+}
+
+/* parte do titulo dele */
+
+.menu-ludica h2{
+
+text-align:center;
+
+text-decoration:underline;
+
+}
+.perfil-ludica img { 
+  width: 180px; 
+  height: 150px; 
+  object-fit: cover; 
+  
+}
+.menu-ludica .perfil-ludica {
+  display: flex;
+  align-items: center;
+  
+}
+
+
+/* botão dos jogos */
+
+.menu-ludica .btn-jogos{
+
+background:#ddd;
+
+border:none;
+
+padding:10px;
+
+border-radius:10px;
+
+cursor:pointer;
+
+}
+
+/* parte dos jogos lista */
+
+.menu-ludica .lista-jogos{
+
+padding:15px;
+
+border-radius:10px;
+
+margin-top:10px;
+
+display:none;
+
+}
+
+/* a lista de forma aberta */
+
+.menu-ludica .lista-jogos.ativo{
+
+display:block;
+
+}
+
+.menu-ludica .lista-jogos h3{
+
+text-decoration:underline;
+
+}
+
+.menu-ludica ul{
+
+padding-left:20px;
+
+}
+
+.menu-ludica h4{
+
+text-decoration:underline;
+
+margin-top:10px;
+
+}
+
+/* a opção de sair */
+
+.menu-ludica .sair-menu{
+
+display:block;
+
+margin-top:30px;
+
+text-align:center;
+
+font-weight:bold;
+
+text-decoration:underline;
+
+}
+
+/* tela que fiz da parte conheça */
+
+.banner-inicial{
+    width: 100%;
+    height: calc(100vh - 70px);
+    position: relative;
+    overflow: hidden;
+}
+
+.bg-banner{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: flex;
+}
+
+/* BOTÃO continua normal */
+.conheca{
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* botão */
+
+.btn-conheca{
+    background: #e5dfdf;
+    color: #5a84c9;
+
+    font-size: 40px;
+    font-weight: 900;
+    letter-spacing: 2px;
+
+    border: none;
+    border-radius: 40px;
+
+    padding: 15px 80px;
+
+    box-shadow: 0 8px 0 rgba(0,0,0,0.2);
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.btn-conheca:active{
+    transform: translateY(5px);
+    box-shadow: 0 3px 0 rgba(0,0,0,0.2);
+}
+
+/* essa parte mantem a rolagem */
+
+.banner-inicial{
+    width:100%;
+    min-height:calc(100vh - 70px); 
+
+    background-image: url('../MIDIAS/plano\ de\ fundo\ pagina\ conheça.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    position: relative;
+}
+
+/* a opção de seção dos jogos */
+
+.secao-jogos{
+    padding: 80px 20px;
+    background: #f4eeee;
+    text-align: center;
+}
+
+.titulo-jogos{
+    font-size: 50px;
+    color: #3c6cc5;
+    margin-bottom: 50px;
+}
+
+.cards-jogos{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 300px;
+    padding: 20px;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.card img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+
+
+/* as cores das opções dos cards*/
+
+.jogo1{ background: #f4c96b; }
+.jogo2{ background: #e8a8a8; }
+.jogo3{ background: #9bb57a; }
+
+.card h3{
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.card p{
+    font-size: 16px;
+}
+
+/*  a seção da parte do aplicativo */
+
+.secao-app{
+    margin: 80px auto;
+    width: 80%;
+    max-width: 900px;
+
+    background: #b7aed1;
+    padding: 60px 20px;
+
+    border-radius: 30px;
+
+    text-align: center;
+}
+
+.secao-app h1{
+    font-size: 45px;
+    color: #2f5bb7;
+    margin-bottom: 30px;
+}
+
+.logo-app-conheca{
+    width: 40em;
+    max-width: none; 
+    height: auto;
+    display: block;
+    margin: 2em auto;
+}
+
+.btn-cadastro{
+    display: inline-block;
+    margin-top: 20px;
+
+    font-weight: bold;
+    text-decoration: underline;
+    color: black;
+}
+/* frase que fica no final da tela */
+
+.secao-frase{
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.secao-frase h2{
+    font-size: 28px;
+    letter-spacing: 5px;
+
+    background: linear-gradient(to right, #2f5bb7, #a66be0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* footer */
+.footer{
+    background-color: #004aad;
+    color: white;
+    padding: 10px 20px;
+    
+
+
+}
+
+
+.frase{
+margin-top:20px;
+font-weight:bold;
+color:#2f5bb7;
+font-size:18px;
+}
+
+.footer{
+    background-color: #004aad;
+    color: white;
+    padding: 10px 20px;
+    
+
+
+}
+
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+
+.footer-left p {
+    margin: 5px;
+    font-size: 1em;
+    
+
+}
+
+.footer-right{
+   display: flex;
+   flex-direction: column;
+   align-items: flex-end;
+   
+}
+
+.logo-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.logo-container img {
+    
+    width: 94%;
+    max-width: 7em;
+    height: auto;
+    padding-top: 3em;
+
+   
+    
+}
+
+.footer-right-text{
+    font-size: 1em;
+    font-weight: bold;
+    align-items: flex-end;
+    margin: 0.4em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

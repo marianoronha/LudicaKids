@@ -1,0 +1,162 @@
+<!-- cadastro.html -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+
+    <link rel="stylesheet"
+        href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+
+   
+    <link rel="stylesheet" href="CSS/cadastro.css">
+    <link rel="stylesheet" href="CSS/footer.css">
+
+    <link rel="icon" href="midias/iconlogo.png">
+</head>
+
+<body class="cadastro-page">
+
+    <div class="container-cadastro">
+
+        <div class="box-cadastro">
+
+            <!-- botão voltar -->
+            <a href="conheça.html" class="btn-voltar">
+                <i class="fas fa-arrow-left"></i>
+            </a>
+
+            <!-- logo -->
+            <img src="midias/logo.png" class="logo-appcadastro">
+
+            <h2 class="title title-second">
+                Crie sua conta
+            </h2>
+
+            <p class="description description-second">
+                Preencha os seus dados:
+            </p>
+
+            <form class="form" id="loginForm">
+
+                <!-- RESPONSÁVEL -->
+
+                <label class="label-input">
+                    <i class="far fa-user icon-modify"></i>
+                    <input type="text"
+                        placeholder="Nome completo do responsável" required>
+                </label>
+
+                <label class="label-input">
+                    <i class="fas fa-id-card icon-modify"></i>
+                    <input type="text"
+                        placeholder="CPF do responsável" required>
+                </label>
+
+                <label class="label-input">
+                    <i class="fas fa-id-badge icon-modify"></i>
+                    <input type="text"
+                        placeholder="RG do responsável" required>
+                </label>
+
+                <label class="label-input">
+                    <i class="far fa-envelope icon-modify"></i>
+                    <input type="email"
+                        placeholder="Email do responsável" required>
+                </label>
+
+                <label class="label-input">
+                    <i class="fas fa-phone icon-modify"></i>
+                    <input type="tel"
+                        placeholder="Celular do responsável" required>
+                </label>
+                <!-- Adicione este campo logo depois do campo de celular do responsável -->
+
+                <label class="label-input">
+                    <i class="fas fa-lock icon-modify"></i>
+                    <input type="password"
+                        placeholder="Senha do responsável" required>
+                </label>
+
+                <label class="label-input">
+                    <i class="fas fa-lock icon-modify"></i>
+                    <input type="password"
+                        placeholder="Senha da criança" required>
+                </label>
+
+            <!-- esse é o aviso da senhaa -->
+
+<div class="aviso-senha">
+    ⚠️ Em casos de mais de uma criança, a senha permanece a mesma entre elas.
+</div>
+                <!-- CRIANÇA -->
+
+                <div id="criancas-container">
+
+                    <div class="box-crianca">
+
+                        <p class="description description-second">
+                            Dados da Criança
+                        </p>
+
+                        <label class="label-input">
+                            <i class="far fa-user icon-modify"></i>
+                            <input type="text"
+                                placeholder="Nome completo da criança" required>
+                        </label>
+
+                        <label class="label-input">
+                            <i class="fas fa-id-card icon-modify"></i>
+                            <input type="text"
+                                placeholder="CPF da criança" required>
+                        </label>
+
+                        <label class="label-input">
+                            <i class="fas fa-id-badge icon-modify"></i>
+                            <input type="text"
+                                placeholder="Nome de usuário" required>
+                        </label>
+
+                        <!-- DATA DE NASCIMENTO ADICIONADA -->
+
+                        <label class="label-input">
+                            <i class="fas fa-calendar-alt icon-modify"></i>
+                            <input type="date" required>
+                        </label>
+
+                    </div>
+
+                </div>
+
+                <!-- botão adicionar mais crianças -->
+
+                <button type="button"
+                    class="btn btn-second"
+                    onclick="adicionarCrianca()">
+
+                    Adicionar uma criança
+
+                </button>
+
+                <!-- botão cadastrar -->
+
+                <button type="submit"
+                    class="btn btn-second">
+
+                    Cadastrar
+
+                </button>
+
+            </form>
+
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="js/app.js"></script>
+
+</body>
+</html>

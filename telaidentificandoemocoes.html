@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Identificando Emoções</title>
+
+    <link rel="icon" href="midias/iconlogo.png">
+    <link rel="stylesheet" href="CSS/footer.css">
+
+     <link rel = "stylesheet" href="CSS/telaemocoes.css">
+     
+</head>
+<body data-pagina="emocoes">
+
+
+  
+ <!-----inicio do carrosel---->
+ <!--tela inicial e botões laterais para passar as imagens-->
+<div class="tela-emocoes">
+<div class="emocoes-container">
+    <button class="botao-esquerda" onclick="mudarImagem(-1)"><</button>
+    <img id="carrossel" src="../midias/telainicialIE.png" alt="carrossel de imagens">
+    <button class="botao-direita" onclick="mudarImagem(1)">></button>
+</div>
+
+<!---parte dos elementos do background(sem a girafa)--->
+
+<div class="fonte">
+
+    <img src="midias/tituloIE.png" class="titulo" alt="Titulo">
+
+  </div>
+
+<div class="elementos">
+
+<img src="midias/sol.png" class="sol" alt="Sol">
+<img src="midias/nuvem.png" class="nuvem n1" alt="Nuvem">
+<img src="midias/nuvem.png" class="nuvem n2" alt="Nuvem">
+<img src="midias/nuvem.png" class="nuvem n3" alt="Nuvem">
+<img src="midias/borboleta.png" class="borboleta b1" alt="Borboleta">
+<img src="midias/borboleta.png" class="borboleta b2" alt="Borboleta">
+
+</div>
+
+
+  <!--parte da descrição do jogo-->
+<div class="conteudo1">
+  <p class="texto">
+    Neste jogo as crianças vão realizar uma associação de como a girafa está se sentindo e/ou como aparenta, assim aprendendo a como lidar em casos de raiva, tristeza, angústia, tédio etc., fazendo assim com que a criança consiga identificar não só suas próprias emoções como também de seu ciclo social.
+  </p>
+
+  <div class="conteudo2">
+    <p class="texto">
+    <strong>Objetivo:</strong> Auxiliar no reconhecimento e inteligência emocional, para proporcionar entendimento às crianças referente a seus sentimentos, emoções e ansiedade. Pois muitas delas não conseguem se expressar ou não entendem ao certo o que estão sentindo, assim reprimindo emoções, o que pode levar à ansiedade.
+    </p>
+  </div>
+</div>
+
+
+<!--espaço entre o texto e o rodapé-->
+<div class="espaço-final"></div>
+
+
+<!--fundo da girafa-->
+<img src="midias/girafa.png" class="girafa" alt="Girafa">
+
+
+<!--rodapé-->
+ <footer class="footer">
+    <div class="footer-container">
+
+        <!-- aqui coloquei as info que vão ficar ao lado esquerdo -->
+         <div class="footer-left">
+            <p>Telefone: 11 94724-6510</p>
+            <p>Email: ludicakidsFatec@gmail.com</p>
+         </div>
+
+         <!-- agora lado direito -->
+          <div class="footer-right">
+            <div class="logo-container">
+                <img src="midias/logo2.png" alt="Logo Girafa LúdicaKids">
+            </div>
+
+            <p class="footer-right-text">
+                Brincar para acalmar, aprender para crescer!
+            </p>
+
+          </div>
+
+    </div>
+</footer>
+
+<script src="js/script.js"></script>
+<script src="js/menujogos.js"></script>
+
+</body>
+</html>

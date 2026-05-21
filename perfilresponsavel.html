@@ -1,0 +1,141 @@
+<link rel="icon" href="midias/iconlogo.png">
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil Responsável</title>
+
+    <link rel="stylesheet" href="CSS/perfilresponsavel.css">
+    <link rel="stylesheet" href="CSS/footer.css">
+</head>
+
+<body>
+
+    <section class="perfil-container">
+
+        <!-- FOTO FIXA DO RESPONSÁVEL -->
+
+        <div class="foto-perfil">
+            <img src="midias/girafasperfil/responsavelimgperfil.png" alt="Foto Responsável">
+        </div>
+
+        <p class="perfil-texto">
+            Você está no perfil: Responsável
+        </p>
+
+        <!-- NOME RESPONSÁVEL -->
+
+        <div class="dados-box destaque">
+            <p>NOME:</p>
+        </div>
+
+        <!-- CRIANÇA 1 -->
+
+        <div class="dados-box linha-status">
+            <p>CRIANÇA(S):</p>
+
+            <div class="status ativo">
+                <span class="bolinha"></span>
+            </div>
+        </div>
+
+        <!-- CRIANÇA 2 -->
+
+        <div class="dados-box linha-status">
+            <p>CRIANÇA(S):</p>
+
+            <div class="status inativo">
+                <span class="bolinha"></span>
+            </div>
+        </div>
+
+        <!-- BOTÃO -->
+
+        <button class="btn-alterar" onclick="abrirPopupResponsavel()">
+            FAZER ALTERAÇÕES
+        </button>
+
+        <!-- BOTÕES EXTRAS -->
+
+        <div class="botoes-extras">
+
+                <a href="atividadedascrianças.html">
+            <button class="btn-extra atividade">
+                ATIVIDADE DAS CRIANÇAS
+            </button>
+        </a>
+
+        <a href="ajudaecontato.html">
+            <button class="btn-extra ajuda">
+                AJUDA E CONTATO
+            </button>
+        </a>
+        </div>
+
+    </section>
+
+    <!-- POPUP DE ACESSO DO RESPONSÁVEL -->
+
+    <div class="popup" id="popupResponsavel">
+
+        <div class="popup-content popup-login">
+
+            <span class="fechar" onclick="fecharPopupResponsavel()">
+                ×
+            </span>
+
+            <h2>
+                Acesso do Responsável
+            </h2>
+
+            <p class="texto-popup">
+                Para alterar os dados, informe o email e a senha do responsável
+            </p>
+
+            <div class="campo-popup">
+                <input type="email" placeholder="Digite o email do responsável">
+            </div>
+
+            <div class="campo-popup">
+                <input type="password" placeholder="Digite a senha do responsável">
+            </div>
+
+            <button class="btn-confirmar">
+                ENTRAR
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- BANNER APP -->
+
+    <section class="banner-app">
+
+        <div class="box-app">
+            <h3>
+                BAIXE O NOSSO <br>
+                APLICATIVO
+            </h3>
+
+            <img src="midias/iconlogo.png" alt="Logo App">
+        </div>
+
+        <p class="frase">
+            BRINCAR PARA ACALMAR, APRENDER PARA CRESCER!
+        </p>
+
+    </section>
+
+   
+
+    <script src="js/perfilresponsavel.js"></script>
+    <script src="js/menujogos.js"></script>
+    <script src="js/rodape.js"></script>
+
+</body>
+
+</html>
