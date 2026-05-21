@@ -6,7 +6,9 @@
 # LudicaKids
 > **"Brincar para acalmar, aprender para crescer."**
 
-**Sobre o Projeto:**
+**Sobre o Projeto:** <p align="center">
+<img src= "midias/logo2.png" width="50"/>
+</p>
 O Lúdica Kids é um projeto frontend desenvolvido com foco em saúde mental infantil, oferecendo uma experiência visual lúdica e interativa para crianças.
 A aplicação foi construída utilizando tecnologias web fundamentais e possui páginas informativas, jogos educativos e atividades interativas voltadas ao desenvolvimento emocional e sensorial.
 O objetivo principal do projeto é proporcionar um ambiente acolhedor, intuitivo e acessível, incentivando o aprendizado emocional por meio da brincadeira.
