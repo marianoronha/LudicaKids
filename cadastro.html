@@ -40,50 +40,50 @@
                 Preencha os seus dados:
             </p>
 
-            <form class="form" id="loginForm">
+            <form class="form" id="cadastroForm">
 
                 <!-- RESPONSÁVEL -->
 
                 <label class="label-input">
                     <i class="far fa-user icon-modify"></i>
-                    <input type="text"
+                    <input type="text" id="nomeResponsavel"
                         placeholder="Nome completo do responsável" required>
                 </label>
 
                 <label class="label-input">
                     <i class="fas fa-id-card icon-modify"></i>
-                    <input type="text"
+                    <input type="text" id="cpfResponsavel"
                         placeholder="CPF do responsável" required>
                 </label>
 
                 <label class="label-input">
                     <i class="fas fa-id-badge icon-modify"></i>
-                    <input type="text"
+                    <input type="text" id="rgResponsavel"
                         placeholder="RG do responsável" required>
                 </label>
 
                 <label class="label-input">
                     <i class="far fa-envelope icon-modify"></i>
-                    <input type="email"
+                    <input type="email" id="emailResponsavel"
                         placeholder="Email do responsável" required>
                 </label>
 
                 <label class="label-input">
                     <i class="fas fa-phone icon-modify"></i>
-                    <input type="tel"
+                    <input type="tel" id="celularResponsavel"
                         placeholder="Celular do responsável" required>
                 </label>
                 <!-- Adicione este campo logo depois do campo de celular do responsável -->
 
                 <label class="label-input">
                     <i class="fas fa-lock icon-modify"></i>
-                    <input type="password"
+                    <input type="password" id="senhaResponsavel"
                         placeholder="Senha do responsável" required>
                 </label>
 
                 <label class="label-input">
                     <i class="fas fa-lock icon-modify"></i>
-                    <input type="password"
+                    <input type="password" id="senhaCrianca"
                         placeholder="Senha da criança" required>
                 </label>
 
@@ -104,19 +104,19 @@
 
                         <label class="label-input">
                             <i class="far fa-user icon-modify"></i>
-                            <input type="text"
+                            <input type="text" id="nomeCrianca"
                                 placeholder="Nome completo da criança" required>
                         </label>
 
                         <label class="label-input">
                             <i class="fas fa-id-card icon-modify"></i>
-                            <input type="text"
+                            <input type="text" id="cpfCrianca"
                                 placeholder="CPF da criança" required>
                         </label>
 
                         <label class="label-input">
                             <i class="fas fa-id-badge icon-modify"></i>
-                            <input type="text"
+                            <input type="text" id="usuarioCrianca"
                                 placeholder="Nome de usuário" required>
                         </label>
 
@@ -124,7 +124,7 @@
 
                         <label class="label-input">
                             <i class="fas fa-calendar-alt icon-modify"></i>
-                            <input type="date" required>
+                            <input type="date"  id="dataNascimentoCrianca"  required>
                         </label>
 
                     </div>
@@ -157,6 +157,8 @@
 
     <!-- JS -->
     <script src="js/app.js"></script>
+
+    <script src="js/backend.js"></script>
 
 </body>
 </html>
