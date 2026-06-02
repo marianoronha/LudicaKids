@@ -40,50 +40,52 @@
                 Preencha os seus dados:
             </p>
 
-            <form class="form" id="loginForm">
+            <form class="form" id="cadastroForm">
 
                 <!-- RESPONSÁVEL -->
 
                 <label class="label-input">
                     <i class="far fa-user icon-modify"></i>
-                    <input type="text"
+
+                    <!---adicionando id aqui-->
+                    <input type="text" id="nomeCompleto"
                         placeholder="Nome completo do responsável" required>
                 </label>
 
                 <label class="label-input">
                     <i class="fas fa-id-card icon-modify"></i>
-                    <input type="text"
+                    <input type="text" id="cpf"
                         placeholder="CPF do responsável" required>
                 </label>
 
                 <label class="label-input">
                     <i class="fas fa-id-badge icon-modify"></i>
-                    <input type="text"
+                    <input type="text" id="rg"
                         placeholder="RG do responsável" required>
                 </label>
 
                 <label class="label-input">
                     <i class="far fa-envelope icon-modify"></i>
-                    <input type="email"
+                    <input type="email" id="email"
                         placeholder="Email do responsável" required>
                 </label>
 
                 <label class="label-input">
                     <i class="fas fa-phone icon-modify"></i>
-                    <input type="tel"
+                    <input type="tel" id="celular"
                         placeholder="Celular do responsável" required>
                 </label>
                 <!-- Adicione este campo logo depois do campo de celular do responsável -->
 
                 <label class="label-input">
                     <i class="fas fa-lock icon-modify"></i>
-                    <input type="password"
+                    <input type="password" id="senha"
                         placeholder="Senha do responsável" required>
                 </label>
 
                 <label class="label-input">
                     <i class="fas fa-lock icon-modify"></i>
-                    <input type="password"
+                    <input type="password" id="senhaCrianca"
                         placeholder="Senha da criança" required>
                 </label>
 
@@ -156,7 +158,10 @@
     </div>
 
     <!-- JS -->
+    <script src="js/api.js"></script>
+    <script src ="js/cadastro.js"></script>
     <script src="js/app.js"></script>
+
 
 </body>
 </html>
