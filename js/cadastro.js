@@ -1,4 +1,8 @@
 //aqui executa o código dps que a pagina carrega
+function mostrarToast(mensagem, tipo = "sucesso"){
+    alert(mensagem);
+}
+
 document.addEventListener("DOMContentLoaded", () => {
     //busca o responsavel pelo id e para se caso não encontrar
  const formCadastro = document.getElementById("cadastroForm");
@@ -17,7 +21,7 @@ const payload = {
     rg: document.getElementById("rg").value.trim(), 
     email: document.getElementById("email").value.trim(),
     celular: document.getElementById("celular").value.trim(),
-    senhaResponsavel: document.getElementById("senha").value.trim(),
+    senhaResponsavel: document.getElementById("senha").value,
     criancas: []
 };
 //aqui o botão não funciona durante o envio do formulario para o banco e manda um resposta para o usuario aguardar
