@@ -1,4 +1,4 @@
-/* menujogos.css */
+
 
 /* RESET */
 * {
@@ -17,9 +17,8 @@ body {
     background: #ffffff;
 }
 
-/* ===================== */
 /* MENU SUPERIOR */
-/* ===================== */
+
 
 .topo {
     position: fixed;
@@ -122,9 +121,9 @@ body {
     margin-bottom: 1rem;
 }
 
-/* ===================== */
+
 /* BOTÕES PRINCIPAIS */
-/* ===================== */
+
 
 .menu-lateral > a,
 .toggle-btn {
@@ -156,9 +155,8 @@ body {
     border: 2px solid #f7d77b;
 }
 
-/* ===================== */
 /* SUBMENU JOGOS */
-/* ===================== */
+
 
 .lista-jogos {
     display: none;
@@ -188,9 +186,8 @@ body {
     text-align: center;
 }
 
-/* ===================== */
 /* BOTÃO SAIR */
-/* ===================== */
+
 
 .sair-centralizado {
     display: flex;
@@ -209,9 +206,9 @@ body {
     color: black;
 }
 
-/* ===================== */
+
 /* BUBBA */
-/* ===================== */
+
 
 .animacaobubba {
     display: flex;

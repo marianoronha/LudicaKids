@@ -12,3 +12,19 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
 });
+
+
+// document.addEventListener("DOMContentLoaded", () => {
+
+//     fetch("./rodape.html")
+//         .then(res => res.text())
+//         .then(html => {
+
+//             const div = document.createElement("div");
+//             div.innerHTML = html;
+
+//             document.body.appendChild(div);
+
+//         });
+
+// });

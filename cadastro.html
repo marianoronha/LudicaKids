@@ -4,7 +4,7 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
+     <meta charset="UTF-8"> <!-- para aceitar caracteres especiais e acentos -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
 
@@ -39,15 +39,16 @@
             <p class="description description-second">
                 Preencha os seus dados:
             </p>
-
+<!-- essa parte é formulario principal do cadastro -->
             <form class="form" id="cadastroForm">
 
-                <!-- RESPONSÁVEL -->
-
+            
+<!-- campo para a parte do nome completo do responsável -->
                 <label class="label-input">
-                    <i class="far fa-user icon-modify"></i>
+                     <i class="far fa-user icon-modify"></i> <!-- icone do responsavel -->
 
                     <!---adicionando id aqui-->
+                    <!-- campo de digitar o nome -->
                     <input type="text" id="nomeCompleto"
                         placeholder="Nome completo do responsável" required>
                 </label>

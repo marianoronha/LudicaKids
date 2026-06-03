@@ -2,112 +2,92 @@
 <html lang="pt-br">
 
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Login</title>
-<!-- o css coloquei externo junto com as outras páginas -->
-<link rel="stylesheet" href="styles/index.css">
-<link rel="icon" href="midias/iconlogo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conheça - Lúdica Kids</title>
 
-
-<link rel="stylesheet"
-href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-
+    <link rel="stylesheet" href="styles/conheça.css">
+    <link rel="stylesheet" href="styles/menuatualizado.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    
+    <link rel="icon" href="midias/iconlogo.png">
 </head>
+
 <body>
-    <!-- Lateral esquerda de bem vindo de volta para o login-->
-<div class="container">
-
-<div class="content first-content">
-
-<div class="first-column"> 
-
-<img src="midias/logo.png" alt="Logo do App" class="logo-app"> 
-<h2 class="title title-primary">Olá! <br>
-Bem-vindo de volta.</h2>
-
-<button id="signin" class="btn btn-primary">
-Entrar
-</button>
-
-</div>
-<!-- Lateral direita de criar conta  -->
-<div class="second-column">
-
-<h2 class="title title-second">Crie sua conta</h2>
-
-<p class="description description-second">
-Clique abaixo!
-</p>
-
-<!-- leva a tela de cadastro -->
-<a href="cadastro.html" class="btn btn-second">Cadastrar</a>
-
-</div>
-
-</div>
-
-<div class="content second-content">
-
-<div class="first-column">
-
-<h3 class="title title-primary">Ainda Não tem uma conta?<br>
-    Cadastre-se agora e venha se divertir!</h3>
 
 
-<br>
-<a href="cadastro.html" class="btn btn-primary">Cadastrar</a>
-<!-- os dois botões de cadastrar estão como "btn btn-primary" para mesma edição no css  -->
+   
+    <!-- conteúdo -->
 
-</div>
-<!-- Quando apertou em ENTRAR na primeira pagina ele tem a aniação que leva a esta tela: -->
-<div class="second-column">
+    <div class="conteudo-ludica">
 
-<h2 class="title title-second">
-Insira seu login
-</h2>
+        <div class="banner-inicial">
+            <div class="conheca">
+                <img src="midias/bubbaconheca.png" class="bubba-conheca">
 
-<!-- opção de entrar/login -->
-<form class="form" id="loginForm">
+                <a href="opcoesdejogos.html" class="btn-conheca">
+                    CONHEÇA
+                </a>
+            </div>
+        </div>
 
-<label class="label-input">
-<i class="far fa-envelope icon-modify"></i>
-<input type="email" id="loginEmail" placeholder="Email " required>
-</label>
+        <!-- jogos -->
+        <section class="secao-jogos">
 
-<label class="label-input">
-<i class="fas fa-lock icon-modify"></i>
-<input type="password" id="loginPassword" placeholder="Senha" required>
-</label>
+            <div class="titulo-jogos">
+                <img src="midias/conheca.png" alt="Título Conheça">
+            </div>
 
-<a class="password" href="#">
-<u>Esqueceu sua senha?</u>
-</a>
+            <div class="cards-jogos">
 
-<button type="submit" class="btn btn-second">
-Entrar
-</button>
+                <div class="card jogo1">
+                    <img src="midias/cincosentidos1.png">
+                    <h3>5 sentidos mágicos</h3>
+                    <p>Conheça os 5 sentidos mágicos!</p>
+                </div>
 
-</form>
+                <div class="card jogo2">
+                    <img src="midias/respirandocomodragao2.png">
+                    <h3>Respirando com o Dragão</h3>
+                    <p>Ajude o amigo Dragão a se acalmar!</p>
+                </div>
 
-</div>
+                <div class="card jogo3">
+                    <img src="midias/identificandoemocoes3.png">
+                    <h3>Identificando as emoções</h3>
+                    <p>Como você está hoje? Venha descobrir!</p>
+                </div>
 
-</div>
+            </div>
+        </section>
 
-</div>
-<!-- o JS esta externo -->
-<script src="js/app.js"></script>
+        <!-- app -->
+        <section class="secao-app">
+            <h1>BAIXE O NOSSO APLICATIVO</h1>
 
+            <img src="midias/logo.png" class="logo-app-conheca">
 
+            <a href="cadastro.html" class="btn-cadastro">
+                FAÇA O CADASTRO!
+            </a>
 
+        </section>
 
+        <p class="frase">
+            BRINCAR PARA ACALMAR, APRENDER PARA CRESCER!
+        </p>
+
+    </div>
+
+    
+
+<script src="js/menu.js"></script>
+<script src="js/rodape.js"></script>
+<script src="js/modal-login.js"></script>
 
 
 
 
 </body>
+
 </html>
-
-
-
-

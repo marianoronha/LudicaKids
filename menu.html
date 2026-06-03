@@ -1,80 +1,145 @@
 <header class="topo">
+
 <link rel="stylesheet" href="styles/menu.css">
+<link rel="stylesheet" href="styles/login.css">
 
     <div class="lado-esquerdo">
 
-        <!-- BOTÃO MENU (abre e fecha no mesmo botão) -->
-        <button class="menu-btn" onclick="toggleMenu()">☰</button>
-<a href="conheça.html">
-    <img src="midias/bubbamenuatualizado.png" alt="Bubba" class="logo">
-</a>
+        <!-- BOTÃO MENU -->
+        <button class="menu-btn" onclick="toggleMenu()">
+            ☰
+        </button>
+
+        <!-- LOGO -->
+        <a href="index.html">
+
+            <img src="midias/bubbamenuatualizado.png"
+            alt="Bubba"
+            class="logo">
+
+        </a>
+
     </div>
+
+
+    <!-- BOTÕES DIREITA -->
 
     <div class="lado-direito">
 
-        <a href="cadastro.html" class="botao cadastro">
+        <!-- CADASTRAR -->
+        <button
+        id="abrirLoginCadastro"
+        class="botao cadastro"
+        type="button">
+
             Cadastrar
-        </a>
 
-        <a href="index.html" class="botao login">
+        </button>
+
+        <!-- LOGIN -->
+        <button
+        id="abrirLoginCadastro2"
+        class="botao login"
+        type="button">
+
             Login
-        </a>
 
-        <a href="quemsomos.html" class="botao quem-somos">
-            Quem somos
-        </a>
+        </button>
+<a href="quemsomos.html"
+class="botao quem-somos">
+
+    Quem somos
+
+</a>
 
     </div>
 
 </header>
 
+
+
+<!-- MENU LATERAL -->
+
 <aside class="menu-lateral" id="menuLateral">
 
     <!-- FECHAR -->
-    <button class="fechar" onclick="fecharMenu()">✕</button>
+    <button class="fechar" onclick="fecharMenu()">
+        ✕
+    </button>
 
     <!-- PERFIL -->
-    <a href="perfil.html">👤 Perfil</a>
+    <a href="perfil.html">
+        👤 Perfil
+    </a>
 
     <!-- JOGOS -->
     <button class="toggle-btn" onclick="toggleJogos()">
+
         🎮 Jogos ▼
+
     </button>
 
     <ul class="lista-jogos" id="listaJogos">
 
         <li>
+
             <a href="telasentidosmagicos.html">
+
                 Cinco Sentidos Mágicos
+
             </a>
+
         </li>
 
         <li>
+
             <a href="teladragao.html">
+
                 Respirando com o Dragão
+
             </a>
+
         </li>
 
         <li>
+
             <a href="telaidentificandoemocoes.html">
+
                 Identificando as Emoções
+
             </a>
+
         </li>
 
     </ul>
 
+
     <!-- SAIR -->
+
     <div class="sair-centralizado">
-        <a href="conheça.html" class="btn-sair">
+
+        <a href="index.html" class="btn-sair">
+
             Sair
+
         </a>
+
     </div>
 
+
     <!-- BUBBA -->
+
     <div class="animacaobubba">
-        <img src="midias/bubbaparamenu.png" alt="Bubba">
+
+        <img src="midias/bubbaparamenu.png"
+        alt="Bubba">
+
     </div>
 
 </aside>
 
+
+<!-- puxando os js  -->
+
 <script src="js/menu.js"></script>
+<script src="js/modal-login.js"></script>
