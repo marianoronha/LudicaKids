@@ -36,28 +36,7 @@ if (btnSignup && container) {
 }
 
 
-// LOGIN
 
-
-const loginForm = document.getElementById("loginForm");
-
-
-if (loginForm) {
-
-    loginForm.addEventListener("submit", function (e) {
-
-        e.preventDefault();
-
-        const email =
-        document.getElementById("loginEmail")?.value || "";
-
-        alert(
-            "Login realizado!\n\nEmail: " + email
-        );
-
-    });
-
-}
 
 
 
