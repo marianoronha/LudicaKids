@@ -1,7 +1,3 @@
-//aqui executa o código dps que a pagina carrega
-function mostrarToast(mensagem, tipo = "sucesso"){
-    alert(mensagem);
-}
 
 document.addEventListener("DOMContentLoaded", () => {
     //busca o responsavel pelo id e para se caso não encontrar
@@ -14,6 +10,19 @@ document.addEventListener("DOMContentLoaded", () => {
 formCadastro.addEventListener("submit", async(evento)=> {
     evento.preventDefault();
 
+    // aqui coleta os dados das crianças 
+    const blocosCrianca = formCadastro.querySelectorAll(".box-crianca");
+    const criancas = [];
+        for (const bloco of blocosCrianca){
+            const inputs = bloco.querySelectorAll("input");
+            criancas.push({
+                nomeCompleto: inputs[0]?.value.trim(),
+                cpf: inputs[1]?.value.trim(),
+                nomeUsuario: inputs[2]?.value.trim(),
+                dataNascimento: inputs[3]?.value
+            });
+        }
+
     //dados do responsavel no cadastro do back
 const payload = {
     nomeCompleto: document.getElementById("nomeCompleto").value.trim(),
@@ -22,8 +31,9 @@ const payload = {
     email: document.getElementById("email").value.trim(),
     celular: document.getElementById("celular").value.trim(),
     senhaResponsavel: document.getElementById("senha").value,
-    criancas: []
+    criancas
 };
+
 //aqui o botão não funciona durante o envio do formulario para o banco e manda um resposta para o usuario aguardar
     const botaoCadastrar = formCadastro.querySelector("button[type='submit']");
     botaoCadastrar.disabled = true;
