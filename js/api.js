@@ -1,3 +1,3 @@
 //aqui eu peguei a url de onde o nosso backend esta hospedado
 
-const API_URL = ludicakids-backend.railway.internal
+const API_URL = "https://ludicakids-backend-production.up.railway.app"
