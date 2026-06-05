@@ -1,6 +1,3 @@
-// id do html p lembrar
-// id: loginEmail e loginPassword
-
 document.addEventListener("DOMContentLoaded", ()=>{
     const loginForm = document.getElementById("loginForm");
     if (!loginForm) return;
@@ -11,7 +8,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
 
         const email = document.getElementById("loginEmail").value.trim();
         const senha = document.getElementById("loginPassword").value;
-        const botao = form.querySelector("button[type='submit']");
+        const botao = loginForm.querySelector("button[type='submit']");
 
         botao.disabled=true;
         botao.textContent= "Entrando...";
@@ -25,7 +22,8 @@ document.addEventListener("DOMContentLoaded", ()=>{
                     
                     },
                     body: JSON.stringify ({
-                        loginEmail, loginPassword
+                        email,
+                        senhaResponsavel: senha
                     })
                 }
             );
@@ -49,7 +47,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
                     "Login realizado!"
                 );
 
-                window.location.href= "conheca.html";
+                window.location.href= "conheça.html";
 
             } else{
                 alert(
