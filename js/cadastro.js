@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
  if (!formCadastro)
     return;
+
 //pega o envio do formulario
 //e impede o carregamento do site
 formCadastro.addEventListener("submit", async(evento)=> {
