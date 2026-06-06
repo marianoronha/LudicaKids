@@ -46,9 +46,10 @@ position:absolute;
 background:#004aad;
 width:40%;
 height:100%;
-left:0;
+transform: translateX(0%);
 border-top-left-radius:15px;
 border-bottom-left-radius:15px;
+transform-origin: left center;
 }
 
 
@@ -228,7 +229,7 @@ z-index:13;
 }
 
 .login-page .sign-in-js .content::before{
-left:60%;
+ transform: translateX(150%);
 border-top-left-radius:0;
 border-bottom-left-radius:0;
 border-top-right-radius:15px;
@@ -319,60 +320,17 @@ z-index:-1;
 }
 
 @keyframes slidein{
-
-from{
-left:0;
-width:40%;
-}
-
-25%{
-left:5%;
-width:50%;
-}
-
-50%{
-left:25%;
-width:60%;
-}
-
-75%{
-left:45%;
-width:50%;
-}
-
-to{
-left:60%;
-width:40%;
-}
+0%   { transform: translateX(0%)    scaleX(1);   }
+50%  { transform: translateX(75%)   scaleX(1.4); }
+100% { transform: translateX(150%)  scaleX(1);   }
 
 }
+
 
 @keyframes slideout{
-
-from{
-left:60%;
-width:40%;
-}
-
-25%{
-left:45%;
-width:50%;
-}
-
-50%{
-left:25%;
-width:60%;
-}
-
-75%{
-left:5%;
-width:50%;
-}
-
-to{
-left:0;
-width:40%;
-}
+0%   { transform: translateX(150%)  scaleX(1);   }
+50%  { transform: translateX(75%)   scaleX(1.4); }
+100% { transform: translateX(0%)    scaleX(1);   }
 
 }
 
@@ -495,8 +453,8 @@ background:transparent;
 
 .fechar-modal{
 position:absolute;
-top:10px;
-right:20px;
+top:28px;
+right:35px;
 font-size:45px;
 color:white;
 cursor:pointer;

@@ -1,0 +1,35 @@
+/* aqui meninas eu criei esses toast q são os avisos do sistema quando o front entra em contato com o back e valida ou nega uma ação*/
+
+/*esse é o toast do cadastro*/
+.toast {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgb(0, 0, 0);
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    z-index: 9999;
+}
+.toast.sucesso{
+    background: #7cf8af;
+    border: 1px solid #1daf5a;
+}
+.toast.erro{
+    background: #ffa79d;
+    border: 1px solid #fd5a47;
+}
+
+/* criei o da tela index caso o usuario queira avançar no site e ainda não for cadastrado*/
+
+.toast.aviso {
+    background: #fff3b0;
+    color: #8a6d1d;
+    border: 1px solid #f7d774;
+    padding: 20px 30px;
+    border-radius: 10px;
+    font-size: 14px;
+    top: 40%;
+    text-align: center;
+}

@@ -52,7 +52,7 @@ const payload = {
 if (resposta.ok){
     mostrarToast("Cadastro concluído com sucesso");
     formCadastro.reset();
-    setTimeout(() => (window.location.href = "conheçalogado.html"), 2000);
+    setTimeout(() => (window.location.href = "conhecalogado.html"), 2000);
 }else {
 
 //caso dê errado
