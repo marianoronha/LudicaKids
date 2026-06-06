@@ -47,7 +47,8 @@ document.addEventListener("DOMContentLoaded", ()=>{
                     "Login realizado!"
                 );
 
-                window.location.href= "conheça.html";
+                window.top.document.getElementById("modalLogin").style.display = "none";
+                window.top.location.href = "conheça.html";
 
             } else{
                 alert(
