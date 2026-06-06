@@ -228,3 +228,22 @@ body.cadastro-page {
     margin-bottom: 15px;
     text-align: center;
 }
+
+.toast {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    z-index: 9999;
+}
+.toast.sucesso{
+    background: #7cf8af;
+}
+.toast.erro{
+    background: #ff6b5b;
+
+}
