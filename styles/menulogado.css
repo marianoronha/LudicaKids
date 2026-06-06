@@ -1,0 +1,243 @@
+/* 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    padding-top: 80px;
+    overflow-x: hidden;
+    background: #ffffff;
+}
+
+
+
+
+.topo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    z-index: 9999;
+}
+
+
+
+.lado-esquerdo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+
+
+.menu-btn {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 10002;
+}
+
+
+
+.logo {
+    width: 35px;
+    height: auto;
+    display: block;
+    margin-left: 12px;
+    margin-top: 40px;
+}
+
+
+
+.lado-direito {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.botao {
+    padding: 0.6rem 1.5rem;
+    border: none;
+    border-radius: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1rem;
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+}
+
+.quem-somos {
+    background: #f8c8dc;
+}
+
+/* ===================== */
+/* MENU LATERAL */
+/* ===================== */
+/* 
+.menu-lateral {
+    position: fixed;
+    top: 0;
+    left: -22rem;
+    width: 20rem;
+    height: 100%;
+    background: #fff7fb;
+    padding: 1.5rem;
+    transition: 0.4s;
+    border-radius: 0 2rem 2rem 0;
+    overflow-y: auto;
+    box-shadow: 4px 0 12px rgba(0,0,0,0.08);
+    z-index: 9999;
+}
+
+.menu-lateral.ativo {
+    left: 0;
+}
+
+
+
+.fechar {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+
+
+
+
+
+.menu-lateral > a,
+.toggle-btn {
+    display: block;
+    width: 100%;
+    padding: 16px;
+    margin-top: 1rem;
+    border-radius: 22px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+
+
+.menu-lateral > a {
+    background: #a8d8ff;
+    border: 2px solid #7cc3f2;
+}
+
+
+
+.toggle-btn {
+    background: #f7d77b;
+    border: 2px solid #f7d77b;
+}
+
+
+
+
+.lista-jogos {
+    display: none;
+    margin-top: 1rem;
+    padding: 0;
+}
+
+.lista-jogos.ativo {
+    display: block;
+}
+
+.lista-jogos li {
+    list-style: none;
+    margin-top: 0.7rem;
+}
+
+.lista-jogos li a {
+    display: block;
+    padding: 12px;
+    border-radius: 18px;
+    background: #fff3b0;
+    border: 2px solid #f3e6a1;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+
+
+.sair-centralizado {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.btn-sair {
+    background: #f8c8dc;
+    border: 2px solid #f1a9c4;
+    padding: 8px 24px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    color: black;
+}
+
+
+
+
+
+.animacaobubba {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 2rem;
+    padding-left: 10px;
+    animation: flutuar 2s ease-in-out infinite;
+}
+
+.animacaobubba img {
+    width: 140px;
+    height: auto;
+}
+
+
+
+@keyframes flutuar {
+
+    0% {
+        opacity: 0.6;
+        transform: translateY(0px);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateY(-10px);
+    }
+
+    100% {
+        opacity: 0.6;
+        transform: translateY(0px);
+    }
+
+} */ 

@@ -134,12 +134,11 @@ text-align: center;
 cursor: pointer;
 border: 2px solid transparent;
 }
-
-/* PERFIL (AZUL) */
+/* 
 .menu-lateral > a{
 background: #a8d8ff;
 border: 2px solid #7cc3f2;
-}
+} */
 
 /* JOGOS (AMARELO) */
 .toggle-btn{
