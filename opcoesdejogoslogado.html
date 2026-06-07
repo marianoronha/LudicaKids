@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opções de Jogos</title>
+
+    <link rel="stylesheet" href="styles/opcoesjogos.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="icon" href="midias/iconlogo.png">
+
+</head>
+
+<body>
+
+    <div class="conteudo-ludica">
+
+    <!-- HERO -->
+        <div class="hero">
+            <!-- titulo esta aqui -->
+            <img src="midias/tituloopçõesjogos.png" class="titulo-img">
+
+
+
+
+            <!--outra forma de linkar as paginas sem ficar sublinhado embaixo-->
+            <div class="botoes">
+                <button class="btn-jogo" onclick="window.location.href='telaidentificandoemocoes.html'">
+                    IDENTIFICANDO AS EMOÇÕES
+                </button>
+
+                <button class="btn-jogo" onclick="window.location.href='teladragao.html'">
+                    RESPIRANDO COM O DRAGÃO
+                </button>
+
+                <button class="btn-jogo" onclick="window.location.href='telasentidosmagicos.html'">
+                    CINCO SENTIDOS MÁGICOS 🔒
+                </button>
+            </div>
+        </div>
+
+    <!-- jogos -->
+            <section class="secao-jogos">
+
+                <div class="titulo-jogos">
+                    <img src="midias/conheca.png" alt="Título Conheça">
+                </div>
+
+                <div class="cards-jogos">
+
+                    <div class="card jogo1">
+                        <img src="midias/cincosentidos1.png">
+                        <h3>5 sentidos mágicos</h3>
+                        <p>Conheça os 5 sentidos mágicos!</p>
+                    </div>
+
+                    <div class="card jogo2">
+                        <img src="midias/respirandocomodragao2.png">
+                        <h3>Respirando com o Dragão</h3>
+                        <p>Ajude o amigo Dragão a se acalmar!</p>
+                    </div>
+
+                    <div class="card jogo3">
+                        <img src="midias/identificandoemocoes3.png">
+                        <h3>Identificando as emoções</h3>
+                        <p>Como você está hoje? Venha descobrir!</p>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- app -->
+            <section class="secao-app">
+                <h1>BAIXE O NOSSO APLICATIVO</h1>
+
+                <img src="midias/logo.png" class="logo-app-conheca">
+
+                <a href="cadastro.html" class="btn-cadastro">
+                    FAÇA O CADASTRO!
+                </a>
+
+            
+            </section>
+            <p class="frase">
+                    BRINCAR PARA ACALMAR, APRENDER PARA CRESCER!
+            </p>
+
+        
+
+        </div>
+    <script src="js/rodape.js"></script>
+    <script src="js/menujogos.js"></script>
+    
+
+
+    <!-- JS -->
+    <script>
+        function abrirMenuLudica() {
+            document.getElementById("menuLudica").classList.toggle("ativo");
+            document.getElementById("overlay").classList.toggle("ativo");
+        }
+
+        function toggleJogos() {
+            document.getElementById("listaJogos").classList.toggle("ativo");
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!-- menujogos.html -->
+
+<header class="topo">
+
+    <link rel="stylesheet" href="styles/menujogos.css">
+
+    <div class="lado-esquerdo">
+
+        <!-- BOTÃO MENU -->
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+        <a href="conheça.html">
+            <img src="midias/bubbamenuatualizado.png" alt="Bubba" class="logo">
+        </a>
+
+    </div>
+
+    <div class="lado-direito">
+
+        <!-- SOMENTE QUEM SOMOS -->
+        <a href="quemsomoslogado.html" class="botao quem-somos">
+            Quem somos
+        </a>
+
+    </div>
+
+</header>
+
+<aside class="menu-lateral" id="menuLateral">
+
+    <!-- FECHAR -->
+    <button class="fechar" onclick="fecharMenu()">✕</button>
+
+    <!-- PERFIL -->
+    <a href="#">👤 Perfil</a>
+
+    <!-- JOGOS -->
+    <button class="toggle-btn" onclick="toggleJogos()">
+        🎮 Jogos ▼
+    </button>
+
+    <ul class="lista-jogos" id="listaJogos">
+
+        <li>
+            <a href="telasentidosmagicos.html">
+                Cinco Sentidos Mágicos
+            </a>
+        </li>
+
+        <li>
+            <a href="teladragao.html">
+                Respirando com o Dragão
+            </a>
+        </li>
+
+        <li>
+            <a href="telaidentificandoemocoes.html">
+                Identificando as Emoções
+            </a>
+        </li>
+
+    </ul>
+
+    <!-- SAIR -->
+    <div class="sair-centralizado">
+        <a href="conheça.html" class="btn-sair">
+            Sair
+        </a>
+    </div>
+
+    <!-- BUBBA -->
+    <div class="animacaobubba">
+        <img src="midias/bubbaparamenu.png" alt="Bubba">
+    </div>
+
+</aside>
+
+<script src="js/menujogos.js"></script>
