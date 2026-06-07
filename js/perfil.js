@@ -79,3 +79,40 @@ function fecharPopupResponsavel() {
 // function fecharPopupResponsavel() {
 //     document.getElementById("popupResponsavel").style.display = "none";
 // }
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const responsavel = JSON.parse(
+        localStorage.getItem("responsavel")
+    );
+
+    if (!responsavel) {
+        console.log("Responsável não encontrado");
+        return;
+    }
+
+    // Nome do responsável
+    const campoResponsavel =
+        document.getElementById("nomeResponsavel");
+
+    if (campoResponsavel) {
+        campoResponsavel.value =
+            responsavel.nomeCompleto;
+    }
+
+    // Nome da criança
+    const campoCrianca =
+        document.getElementById("nomeCrianca");
+
+    if (
+        campoCrianca &&
+        responsavel.criancas &&
+        responsavel.criancas.length > 0
+    ) {
+        campoCrianca.value =
+            responsavel.criancas[0].nomeCompleto;
+    }
+
+});
