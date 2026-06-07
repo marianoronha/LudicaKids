@@ -84,35 +84,18 @@ function fecharPopupResponsavel() {
 
 document.addEventListener("DOMContentLoaded", () => {
 
-    const responsavel = JSON.parse(
-        localStorage.getItem("responsavel")
-    );
+  const crianca = JSON.parse(
+    localStorage.getItem("criancaSelecionada")
+);
 
-    if (!responsavel) {
-        console.log("Responsável não encontrado");
-        return;
-    }
+const responsavel = JSON.parse(
+    localStorage.getItem("responsavel")
+);
 
-    // Nome do responsável
-    const campoResponsavel =
-        document.getElementById("nomeResponsavel");
+document.getElementById("nomeCrianca").textContent =
+    crianca.nomeCompleto;
 
-    if (campoResponsavel) {
-        campoResponsavel.value =
-            responsavel.nomeCompleto;
-    }
-
-    // Nome da criança
-    const campoCrianca =
-        document.getElementById("nomeCrianca");
-
-    if (
-        campoCrianca &&
-        responsavel.criancas &&
-        responsavel.criancas.length > 0
-    ) {
-        campoCrianca.value =
-            responsavel.criancas[0].nomeCompleto;
-    }
+document.getElementById("nomeResponsavel").textContent =
+    responsavel.nomeCompleto;
 
 });
