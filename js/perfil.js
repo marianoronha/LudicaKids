@@ -33,31 +33,77 @@ function fecharPopupResponsavel() {
 
 document.addEventListener("DOMContentLoaded", () => {
 
-  const crianca = JSON.parse(
-    localStorage.getItem("criancaSelecionada")
-);
 
-const responsavel = JSON.parse(
-    localStorage.getItem("responsavel")
-);
+    const crianca = JSON.parse(
+    localStorage.getItem("criancaSelecionada"));
 
-if(!crianca || !responsavel) return;
+    const responsavel = JSON.parse(
+        localStorage.getItem("responsavel")
+    );
+
+    if(!crianca || !responsavel) return;
 
 
-document.getElementById("nomeCrianca").textContent =
-    crianca.nomeCompleto;
+    document.getElementById("nomeCrianca").textContent = crianca.nomeCompleto;
 
-document.getElementById("nomeUsuarioCrianca").textContent =
-    crianca.nomeUsuario || '';
+    document.getElementById("nomeUsuarioCrianca").textContent = crianca.nomeUsuario || '';
 
-document.getElementById("nomeResponsavel").textContent =
-    responsavel.nomeCompleto;
-    
-const fotoSalva = localStorage.getItem("fotoPerfil_"+ crianca._id);
-   if(fotoSalva){
-    document.getElementById("fotoPrincipal").src = fotoSalva;
-   }
+    document.getElementById("nomeResponsavel").textContent = responsavel.nomeCompleto;
+        
+    const fotoSalva = localStorage.getItem("fotoPerfil_"+ crianca._id);
+    if(fotoSalva){
+        document.getElementById("fotoPrincipal").src = fotoSalva;
+    }
+
+
+    const btnEntrar = document.getElementById("btnEntrarResponsavel");
+
+    btnEntrar.addEventListener("click", async () => {
+        const email = document.getElementById("emailResponsavel").value.trim();
+        const senha = document.getElementById("senhaResponsavel").value;
+        const botao = btnEntrar;
+
+        botao.disabled = true;
+        botao.textContent = "Entrando no perfil Responsável...";
+
+        try {
+            const resposta = await fetch(`${API_URL}/responsaveis/login`, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({
+                    email,
+                    senhaResponsavel: senha
+                })
+            });
+
+            const dados = await resposta.json();
+
+            if (resposta.ok) {
+                localStorage.setItem("token", dados.token);
+                localStorage.setItem("responsavel", JSON.stringify(dados.responsavel));
+
+                alert("Login realizado!");
+                window.location.href = "perfilresponsavel.html";
+
+            } else {
+                alert(dados.mensagem || "Email ou senha inválidos");
+            }
+
+        } catch (erro) {
+            console.error(erro);
+            alert("Não foi possível conectar ao servidor.");
+
+        } finally {
+            botao.disabled = false;
+            botao.textContent = "ENTRAR";
+        }
+    });
 
 });
 
- 
+
+
+
+    
