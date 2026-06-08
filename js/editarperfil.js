@@ -3,9 +3,13 @@ document.addEventListener("DOMContentLoaded", () => {
     const responsavel = JSON.parse(
         localStorage.getItem("responsavel")
     );
-
-    if (!responsavel) {
+    const token = localStorage.getItem("token");
+    const crianca = JSON.parse(localStorage.getItem("criancaSelecionada"));
+    
+    if (!responsavel || !token) {
         alert("Responsável não encontrado.");
+
+        window.location.href = "index.html";
         return;
     }
 
@@ -21,110 +25,108 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("emailResponsavel").value =
         responsavel.email;
 
-    const container =
-        document.getElementById("criancasContainer");
 
-    responsavel.criancas.forEach(crianca => {
 
-        const card =
-            document.createElement("div");
+       if (crianca) {
 
-        card.classList.add("card-crianca");
+    document.getElementById("nomeCrianca").value =
+        crianca.nomeCompleto;
 
-        card.innerHTML = `
-<label>Nome Completo</label>
-<div class="input-box">
-    <input type="text"
-           value="${crianca.nomeCompleto}"
-           class="nomeCrianca">
-</div>
+    document.getElementById("cpfCrianca").value =
+        crianca.cpf;
 
-<label>CPF</label>
-<div class="input-box">
-    <input type="text"
-           value="${crianca.cpf}"
-           class="cpfCrianca"
-           disabled>
-</div>
+    document.getElementById("usuarioCrianca").value =
+        crianca.nomeUsuario || '';
 
-<label>Nome de Usuário</label>
-<div class="input-box">
-    <input type="text"
-           value="${crianca.nomeUsuario}"
-           class="usuarioCrianca">
-</div>
-
-<label>Data de Nascimento</label>
-<div class="input-box">
-    <input type="date"
-           value="${crianca.dataNascimento.split("T")[0]}"
-           class="dataNascimento">
-</div>
-
-<button class="btn-salvar">
-    Salvar Alterações
-</button>
-
-<button class="btn-excluir">
-    Excluir Criança
-</button>
-`;
-
-        container.appendChild(card);
-
+    document.getElementById("dataNascimento").value =
+        crianca.dataNascimento
+        ? crianca.dataNascimento.split("T")[0]
+        : '';
+     }
     });
 
-});
+//aqui é para salvar a as informações da criança no banco
+ 
 
-const btnSalvar = card.querySelector(".btn-salvar");
+// agora é salvar o email do responsavel nmo banco
+async function salvarAlteracoes() {
+    const responsavel = JSON.parse(localStorage.getItem("responsavel"));
+    const token = localStorage.getItem("token");
 
-btnSalvar.addEventListener("click", () => {
+    if (!responsavel || !token)
+        return;
+    responsavel.email = document.getElementById("emailResponsavel").value;
+    const novaSenha = document.getElementById("senhaResponsavel").value;
 
-    crianca.nomeCompleto =
-        card.querySelector(".nomeCrianca").value;
-
-    crianca.nomeUsuario =
-        card.querySelector(".usuarioCrianca").value;
-
-    crianca.dataNascimento =
-        card.querySelector(".dataNascimento").value;
-
-    localStorage.setItem(
-        "responsavel",
-        JSON.stringify(responsavel)
-    );
-
-    alert("Informações alteradas com sucesso!");
-});
+    await salvarnoBanco(responsavel, token, novaSenha);
+}
 
 
-const btnExcluir = card.querySelector(".btn-excluir");
+async function salvarCrianca() {
+    const responsavel = JSON.parse(localStorage.getItem("responsavel"));
+    const token = localStorage.getItem("token");
+    const crianca = JSON.parse(localStorage.getItem("criancaSelecionada"));
 
-const btnExcluir = card.querySelector(".btn-excluir");
-
-btnExcluir.addEventListener("click", () => {
-
-    const confirmar = confirm(
-        "Deseja realmente excluir o perfil desta criança?"
-    );
-
-    if (!confirmar) return;
-
-    const index = responsavel.criancas.findIndex(
-        c => c.cpf === crianca.cpf
-    );
-
+    if (!responsavel || !token ||!crianca)
+        return;
+   
+    const index = responsavel.criancas.findIndex(c => c.cpf === crianca.cpf);
     if (index !== -1) {
+        responsavel.criancas[index].nomeCompleto = document.getElementById("nomeCrianca").value;
+        responsavel.criancas[index].nomeUsuario = document.getElementById("usuarioCrianca").value; 
 
-        responsavel.criancas.splice(index, 1);
-
-        localStorage.setItem(
-            "responsavel",
-            JSON.stringify(responsavel)
-        );
-
-        card.remove();
-
-        alert("Perfil da criança excluído com sucesso!");
+        localStorage.setItem("criancaSelecionada", JSON.stringify(responsavel.criancas[index]));
     }
-});
+    await salvarnoBanco(responsavel, token);
+}
+
+
+//aqui vai chamar o backend para finalizar a alteração
+async function salvarnoBanco(responsavel, token, novaSenha = null) {
+   try {
+    const body = {
+        nomeCompleto: responsavel.nomeCompleto,
+        email: responsavel.email,
+        celular: responsavel.celular,
+        criancas: responsavel.criancas
+    };
+    if(novaSenha){
+        body.senhaResponsavel = novaSenha;
+    }
+
+    const resposta = await fetch(`${API_URL}/responsaveis/${responsavel._id}`,{
+        method: "PUT",
+        headers: { 
+            "Content-Type": "application/json",
+            "Authorization": `Bearer ${token}`
+
+        },
+            body: JSON.stringify(body)
+        });
+
+        const dados = await resposta.json();
+
+        if (resposta.ok){
+    ///caso de certo
+        localStorage.setItem("responsavel", JSON.stringify(dados));
+        alert("Salvo com sucesso!");
+    }else {
+
+    //caso dê errado
+        alert(dados.mensagem || "Erro ao salvar");
+    }
+
+    //aqui é um erro mais geral de falha de comunicação com a api 
+    } catch (erro){
+        console.error(erro);
+        alert("Não foi possével conectar ao servidor");
+        }
+    }
+
+
+
+
+
+
+
+
