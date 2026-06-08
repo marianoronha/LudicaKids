@@ -17,51 +17,82 @@ O objetivo principal do projeto é proporcionar um ambiente acolhedor, intuitivo
 
 ---
 
-# **Tecnologias Utilizadas**
+## **Tecnologias Utilizadas**
 - HTML
 - CSS
 - JavaScript
 
----
+## Backend
+- Node.js
+- Express.js
 
-# **Deploy da Aplicação**
+## Banco de Dados
+- MongoDB Atlas
 
-O projeto está disponibilizado online por meio de deploy web, permitindo acesso rápido e fácil diretamente pelo navegador.
+## Hospedagem
+- Railway
 
-🔗 *Acesso ao Projeto:*
-
----
-# **Como Executar Localmente**
-- Clone o repositório:
-  *git clone https://github.com/seu-usuario/seu-repositorio.git*
-- Acesse a pasta do projeto:
-  *cd nome-do-repositorio*
-- Execute o projeto em qualquer navegador.
 
 ---
 
-# 🎨 **Design e Experiência**
+# **Objetivos**
+
+- Incentivar o desenvolvimento emocional infantil.
+- Auxiliar crianças no reconhecimento e expressão de seus sentimentos.
+- Promover atividades educativas de forma divertida e interativa.
+- Disponibilizar um ambiente seguro para responsáveis e crianças.
+- Utilizar tecnologia como ferramenta de apoio à educação e saúde emocional.
+
+---
+
+# Funcionalidades
+
+## 👤 Gestão de Usuários
+- Cadastro de responsáveis.
+- Login e autenticação.
+- Edição de perfil.
+- Visualização de informações pessoais.
+
+## 👤 Gestão de Crianças
+- Cadastro de crianças vinculadas ao responsável.
+- Visualização dos dados cadastrados.
+- Atualização de informações.
+- Exclusão de registros.
+
+## 🎮 Jogos e Atividades Educativas
+- Identificando Emoções.
+- Respirando com o Dragão.
+- Cinco Sentidos Mágicos.
+
+## 📱 Interface Responsiva
+- Navegação intuitiva e amigável.
+- Design lúdico voltado ao público infantil.
+
+
+# **Design e Experiência**
 O projeto foi desenvolvido com:
 - Cores suaves e acolhedoras
 - Elementos visuais infantis
 - Navegação intuitiva
 - Componentes responsivos
 
-
 ---
 
-# 📸 Principais Páginas
+# Principais Páginas
 
 | Página | Descrição |
-|---------|------------|
-| `conheça.html` | Página inicial |
-| `menu.html` | Navegação principal |
-| `perfil.html` | Perfil do usuário |
-| `quemsomos.html` | Informações sobre a equipe do projeto |
+|----------|----------|
+| `index.html` | Página inicial |
+| `login.html` | Login do usuário |
+| `cadastro.html` | Cadastro de responsáveis |
+| `perfil.html` | Perfil da Criança |
+| `perfilresponsavel.html` | Perfil do responsável |
+| `quemvaijogar.html` | Seleção de qual criança jogará |
 | `opcoesdejogos.html` | Opções dos Jogos |
-| `teladragao.html` | Informações sobre o jogo Respirando com o Dragão |
-| `telaidentificandoemocoes.html` | Informações sobre o Identificando as Emoções |
-| `telasentidosmagicos.html` | Informações sobre o 5 Sentidos Mágicos |
+| `teladragao.html` | Jogo Respirando com o Dragão |
+| `telaidentificandoemocoes.html` | Jogo Identificando Emoções |
+| `telasentidosmagicos.html` | Jogo Cinco Sentidos Mágicos |
+| `quemsomos.html` | Informações sobre a equipe |
 
 ---
 ## 👩‍💻 **Desenvolvido por:**

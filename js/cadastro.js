@@ -48,17 +48,24 @@ const payload = {
         body: JSON.stringify(payload),
         });
 
-//caso dê certo
+        const dados = await resposta.json().catch(() => null);
+
 if (resposta.ok){
-    mostrarToast("Cadastro concluído com sucesso");
+    if (dados?.token){
+        localStorage.setItem("token", dados.token);
+    }
+    if (dados?.responsavel){
+        localStorage.setItem("responsavel", JSON.stringify(dados.responsavel));
+    }
+//caso de certo
+    mostrarToast("Cadastro concluído com sucesso", "sucesso");
     formCadastro.reset();
     setTimeout(() => (window.location.href = "conhecalogado.html"), 2000);
 }else {
 
 //caso dê errado
-    const erroServidor = await resposta.json().catch(() => null);
     mostrarToast(
-        "Erro: " + (erroServidor?.mensagem || "tente novamente"),
+        "Erro: " + (dados?.mensagem || "tente novamente"),
         "erro"
     );
   }

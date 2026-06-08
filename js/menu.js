@@ -11,10 +11,24 @@
 
             document.body.prepend(div);
 
-        });
 
+            //aqui é para bloquear o acesso aos botoes 
+
+          const menuLateral = document.getElementById("menuLateral");
+          
+          if(menuLateral){
+            menuLateral.querySelectorAll('a[href="#"]').forEach(link => {
+                link.addEventListener('click', function(e){
+                    e.preventDefault();                
+                    fecharMenu();
+                    mostrarToast('⚠️ Faça login ou cadastre-se para ter acesso as funcionalidades do site!', 'aviso')
+                });
+            });
+
+        }
+
+    });
 });
-
 /* ABRIR MENU */
 window.abrirMenu = function () {
     document.getElementById("menuLateral")?.classList.add("ativo");

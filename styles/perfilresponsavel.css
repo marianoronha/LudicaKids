@@ -64,6 +64,38 @@ body {
     font-weight: bold;
 }
 
+#listaCriancas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin: 1.5em auto;
+    width: 40%;
+}
+
+.crianca-card{
+    width: 100%;
+    background: #f7f2f2;
+    border-radius: 2em;
+    padding: 1em 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.crianca-info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+}
+
+.crianca-nome{
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #777;
+}
+
 .linha-status {
     display: flex;
     align-items: center;

@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Editar Perfil</title>
 
-    <link rel="stylesheet" href="styles/editarPerfil.css">
+    <link rel="stylesheet" href="styles/editarperfil.css">
+    <link rel="stylesheet" href="styles/toast.css">
 
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" href="midias/iconlogo.png">
 </head>
 <body>
 
@@ -24,14 +26,13 @@
         <hr>
 
         <h2>Dados do Responsável</h2>
-<!-- value para -->
+
         <div class="input-box bloqueado">
             <i class="fa-solid fa-user"></i>
             <input
                 type="text"
                 id="nomeResponsavel"
                 name="nomeResponsavel"
-                value="João Silva"
                 disabled>
         </div>
 
@@ -41,7 +42,7 @@
                 type="text"
                 id="cpfResponsavel"
                 name="cpfResponsavel"
-                value="123.456.789-00"
+                
                 disabled>
         </div>
 
@@ -51,7 +52,7 @@
                 type="text"
                 id="rgResponsavel"
                 name="rgResponsavel"
-                value="12.345.678-9"
+                
                 disabled>
         </div>
 
@@ -61,7 +62,7 @@
                 type="email"
                 id="emailResponsavel"
                 name="emailResponsavel"
-                value="joao@email.com">
+                >
         </div>
 
         <div class="input-box">
@@ -69,102 +70,36 @@
             <input
                 type="password"
                 id="senhaResponsavel"
-                name="senhaResponsavel"
-                value="123456">
+                placeholder="Nova senha"
+                >
         </div>
 
         <hr>
+
 
         <h2>Dados da Criança</h2>
 
-        <div class="input-box bloqueado">
-            <i class="fa-solid fa-user"></i>
-            <input
-                type="text"
-                id="nomeCrianca"
-                name="nomeCrianca"
-                value="Pedro Silva"
-                disabled>
-        </div>
+        <div id="criancas-existentes"></div>
 
-        <div class="input-box bloqueado">
-            <i class="fa-solid fa-id-card"></i>
-            <input
-                type="text"
-                id="cpfCrianca"
-                name="cpfCrianca"
-                value="987.654.321-00"
-                disabled>
-        </div>
-
-        <div class="input-box">
-            <i class="fa-solid fa-user-pen"></i>
-            <input
-                type="text"
-                id="usuarioCrianca"
-                name="usuarioCrianca"
-                value="pedrinho123">
-        </div>
-
-        <div class="input-box bloqueado">
-            <i class="fa-solid fa-calendar"></i>
-            <input
-                type="text"
-                id="dataNascimento"
-                name="dataNascimento"
-                value="15/03/2018"
-                disabled>
-        </div>
-
-        <button
-            class="btn-salvar"
-            onclick="salvarAlteracoes()">
-
-            Salvar Alterações
-
-        </button>
-
-        <hr>
-
-        <h2>Crianças Cadastradas</h2>
-
-        <div class="card-crianca">
-
-            <div>
-                <strong>Ana Silva</strong><br>
-                Usuário: aninha123
-            </div>
-
-            <button
-                class="btn-excluir"
-                onclick="excluirCrianca(this)">
-
-                Excluir
-
+        <div class="grupo-botoes">
+            <button class="btn-salvar" onclick="salvarTudo()">
+                <i class="fa-solid fa-floppy-disk"></i>
+                Salvar Alterações
             </button>
 
-        </div>
-
-        <div class="card-crianca">
-
-            <div>
-                <strong>Carlos Silva</strong><br>
-                Usuário: carlinhos
-            </div>
-
-            <button
-                class="btn-excluir"
-                onclick="excluirCrianca(this)">
-
-                Excluir
-
+            <button type="button" class="btn-salvar" onclick="adicionarCriancas()">
+                Adicionar Criança
             </button>
-
         </div>
+
+        <div id="criancas-container"></div>
 
     </div>
 
-    <script src="js/editarPerfil.js"></script>
+        
+    <script src="js/api.js"></script>
+    <script src="js/toast.js"></script>
+    <script src="js/editarperfil.js"></script>
 
 </body>
 </html>

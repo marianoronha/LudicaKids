@@ -1,14 +1,42 @@
-function abrirPopupResponsavel() {
-    document.getElementById("popupResponsavel").style.display = "block";
-}
+document.addEventListener("DOMContentLoaded", () => {
 
-function fecharPopupResponsavel() {
-    document.getElementById("popupResponsavel").style.display = "none";
-}
-// function abrirPopupResponsavel() {
-//     document.getElementById("popupResponsavel").style.display = "block";
-// }
+    const responsavel = JSON.parse(
+        localStorage.getItem("responsavel")
+    );
 
-// function fecharPopupResponsavel() {
-//     document.getElementById("popupResponsavel").style.display = "none";
-// }
+    if (!responsavel) {
+        console.log("Responsável não encontrado");
+        return;
+    }
+
+    // Nome do responsável
+    document.getElementById("nomeResponsavel").textContent =
+        responsavel.nomeCompleto;
+
+    // Crianças
+    const listaCriancas =
+        document.getElementById("listaCriancas");
+
+    if (
+        !responsavel.criancas ||
+        responsavel.criancas.length === 0
+    ) {
+        listaCriancas.innerHTML =
+            "<p>Nenhuma criança cadastrada.</p>";
+        return;
+    }
+
+    responsavel.criancas.forEach(crianca => {
+
+        const card = document.createElement("div");
+        card.className = "crianca-card";
+        card.innerHTML = `
+           <div class= "crianca-info">
+           <span class= "crianca-nome">${crianca.nomeCompleto}</span>
+           <span class= "crianca-usuario">@${crianca.nomeUsuario || ''}</span>
+           </div>
+          `; 
+        listaCriancas.appendChild(card);
+    });
+
+});

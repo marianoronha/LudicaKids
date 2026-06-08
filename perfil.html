@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" href="styles/perfil.css">
     <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/toast.css">
     <link rel="icon" href="midias/iconlogo.png">
 </head>
 
@@ -38,15 +39,20 @@
      
 
         <div class="dados-box destaque">
-            <input type="text" placeholder="Digite o nome da criança">
+            <p>Nome da criança: <span id="nomeCrianca"></span> </p>
+           
         </div>
 
         <div class="dados-box">
-            <input type="text" placeholder="Digite o nome do responsável">
+            <p>Nome de usuário: <span id="nomeUsuarioCrianca"></span></p>
+        </div>
+        
+        <div class="dados-box">
+            <p>Nome do reponsável: <span id="nomeResponsavel"></span></p>
         </div>
 
         <button class="btn-alterar" onclick="abrirPopupResponsavel()">
-    FAZER ALTERAÇÕES
+    ENTRAR NO PERFIL: RESPONSÁVEL
 </button>
 
     </section>
@@ -118,29 +124,32 @@
         </h2>
 
         <p class="texto-popup">
-            Para alterar os dados, informe o email e a senha 
+            Para visualizar o perfil Responsavel, informe o email e a senha 
         </p>
-
+        
         <div class="campo-popup">
-            <input type="email" placeholder="Digite o email ">
+            <input type="email" id="emailResponsavel" placeholder="Digite o email ">
         </div>
 
         <div class="campo-popup">
-            <input type="password" placeholder="Digite a senha ">
+            <input type="password" id="senhaResponsavel" placeholder="Digite a senha ">
         </div>
 
-        <a href="perfilresponsavel.html" class="btn-confirmar">
-            ENTRAR
-        </a>
-
-    </div>
+        <button id="btnEntrarResponsavel" class="btn-entrarResponsavel">ENTRAR</button>
 
 </div>
-    
 
-    <script src="js/perfil.js"></script>
+
+    <!-- <script src="js/perfil.js"></script>
     
-<script src="js/menujogos.js"></script>
+<script src="js/menujogos.js"></script>-->
+
+        <script src="js/api.js"></script>
+        <script src="js/toast.js"></script>
+        <script src="js/login.js"></script>
+        <script src="js/perfil.js"></script>
+        <script src="js/menujogos.js"></script>
+
         <script src="js/rodape.js"></script>
   
 
