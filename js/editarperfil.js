@@ -49,36 +49,52 @@ document.addEventListener("DOMContentLoaded", () => {
  
 
 // agora é salvar o email do responsavel nmo banco
-async function salvarAlteracoes() {
+async function salvarTudo() {
     const responsavel = JSON.parse(localStorage.getItem("responsavel"));
     const token = localStorage.getItem("token");
+    const crianca = JSON.parse(localStorage.getItem("criancaSelecionada"));
 
     if (!responsavel || !token)
         return;
+
     responsavel.email = document.getElementById("emailResponsavel").value;
+
+    if(crianca) {
+        const index = responsavel.criancas.findIndex(c => c.cpf === crianca.cpf);
+        if (index !== -1) {
+            responsavel.criancas[index].nomeUsuario = document.getElementById("usuarioCrianca").value;
+           
+        localStorage.setItem("criancaSelecionada", JSON.stringify(responsavel.criancas[index]));
+        }
+    }
+
     const novaSenha = document.getElementById("senhaResponsavel").value;
 
     await salvarnoBanco(responsavel, token, novaSenha);
 }
 
+    async function excluirCrianca(){
+        const responsavel = JSON.parse(localStorage.getItem("responsavel"));
+        const token = localStorage.getItem("token");
+            const crianca = JSON.parse(localStorage.getItem("criancaSelecionada"));
 
-async function salvarCrianca() {
-    const responsavel = JSON.parse(localStorage.getItem("responsavel"));
-    const token = localStorage.getItem("token");
-    const crianca = JSON.parse(localStorage.getItem("criancaSelecionada"));
-
-    if (!responsavel || !token ||!crianca)
+            if (!responsavel || !token ||!crianca)
         return;
-   
-    const index = responsavel.criancas.findIndex(c => c.cpf === crianca.cpf);
-    if (index !== -1) {
-        responsavel.criancas[index].nomeCompleto = document.getElementById("nomeCrianca").value;
-        responsavel.criancas[index].nomeUsuario = document.getElementById("usuarioCrianca").value; 
+        
+            const confirmado = confirm(`Tem certeza que deseja excluir ${crianca.nomeCompleto}?`);
+            if(!confirmado) return;
 
-        localStorage.setItem("criancaSelecionada", JSON.stringify(responsavel.criancas[index]));
+            const index = responsavel.criancas.findIndex(c => c.cpf === crianca.cpf);
+            if (index !== -1){
+                responsavel.criancas.splice(index, 1);
+            }
+
+            const salvo = await salvarnoBanco(responsavel, token);
+            if(salvo) {
+                localStorage.removeItem("criancaSelecionada");
+                window.location.href = "perfilresponsavel.html";
+            }
     }
-    await salvarnoBanco(responsavel, token);
-}
 
 
 //aqui vai chamar o backend para finalizar a alteração
@@ -90,6 +106,7 @@ async function salvarnoBanco(responsavel, token, novaSenha = null) {
         celular: responsavel.celular,
         criancas: responsavel.criancas
     };
+
     if(novaSenha){
         body.senhaResponsavel = novaSenha;
     }
@@ -110,16 +127,19 @@ async function salvarnoBanco(responsavel, token, novaSenha = null) {
     ///caso de certo
         localStorage.setItem("responsavel", JSON.stringify(dados));
         alert("Salvo com sucesso!");
+        return true;
+
     }else {
 
     //caso dê errado
-        alert(dados.mensagem || "Erro ao salvar");
+        alert(dados.mensagem || "Erro ao salvar");return false;
     }
 
     //aqui é um erro mais geral de falha de comunicação com a api 
     } catch (erro){
         console.error(erro);
         alert("Não foi possével conectar ao servidor");
+        return false;
         }
     }
 
