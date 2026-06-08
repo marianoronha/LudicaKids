@@ -76,74 +76,27 @@
 
         <hr>
 
+
         <h2>Dados da Criança</h2>
 
-        <div class="input-box bloqueado">
-            <i class="fa-solid fa-user"></i>
-            <input
-            
-                id="nomeCrianca"
-                name="nomeCrianca"
-                disabled>
+        <div id="criancas-existentes"></div>
+
+        <div class="grupo-botoes">
+            <button class="btn-salvar" onclick="salvarTudo()">
+                <i class="fa-solid fa-floppy-disk"></i>
+                Salvar Alterações
+            </button>
+
+            <button type="button" class="btn-salvar" onclick="adicionarCriancas()">
+                Adicionar Criança
+            </button>
         </div>
 
-        <div class="input-box bloqueado">
-            <i class="fa-solid fa-id-card"></i>
-            <input
-                
-                id="cpfCrianca"
-                name="cpfCrianca"
-                disabled>
-        </div>
+        <div id="criancas-container"></div>
 
-        <div class="input-box">
-            <i class="fa-solid fa-user-pen"></i>
-            <input
-                type="text"
-                id="usuarioCrianca"
-                name="usuarioCrianca">
-        </div>
-
-        <div class="input-box bloqueado">
-            <i class="fa-solid fa-calendar"></i>
-            <input
-                type="text"
-                id="dataNascimento"
-                name="dataNascimento"
-                
-                disabled>
-        </div>
-
-            <div class = "grupo-botoes">
-                <button class="btn-salvar" onclick="salvarTudo()">
-                    <i class="fa-solid fa-floppy-disk"></i>
-                    Salvar Alterações 
-                </button>
-<!-- adicionar criança -->
-                <button
-    type="button"
-    class="btn-salvar"
-    onclick="adicionarCrianca()">
-
-    Adicionar Criança
-
-</button>
-
-<div id="criancas-container"></div>
-
-<hr>
-
-                <button class="btn-excluir" onclick="excluirCrianca()">
-                    <i class="fa-solid fa-trash"></i>
-                    Excluir Criança
-                </button>
-            </div>
-
-            
-        
     </div>
 
-    
+        
     <script src="js/api.js"></script>
     <script src="js/toast.js"></script>
     <script src="js/editarperfil.js"></script>
