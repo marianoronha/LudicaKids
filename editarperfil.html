@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Editar Perfil</title>
 
-    <link rel="stylesheet" href="styles/editarPerfil.css">
+    <link rel="stylesheet" href="styles/editarperfil.css">
 
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -24,7 +24,7 @@
         <hr>
 
         <h2>Dados do Responsável</h2>
-<!-- value para -->
+
         <div class="input-box bloqueado">
             <i class="fa-solid fa-user"></i>
             <input
@@ -68,7 +68,7 @@
             <input
                 type="password"
                 id="senhaResponsavel"
-                name="senhaResponsavel"
+                placeholder="Nova senha"
                 >
         </div>
 
@@ -122,21 +122,16 @@
 
         <button
             class="btn-salvar"
-            onclick="salvarAlteracoes()">
+            onclick="salvarCrianca()">
 
             Salvar Alterações
 
         </button>
 
-        <hr>
-
-        <h2>Crianças Cadastradas</h2>
-
-        <div id="criancasContainer"></div>
-
     </div>
 
-    <script src="js/editarPerfil.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/editarperfil.js"></script>
 
 </body>
 </html>
