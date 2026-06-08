@@ -1,28 +1,3 @@
-function abrirPopupResponsavel() {
-    document.getElementById("popupResponsavel").style.display = "block";
-}
-
-function fecharPopupResponsavel() {
-    document.getElementById("popupResponsavel").style.display = "none";
-}
-// function abrirPopupResponsavel() {
-//     document.getElementById("popupResponsavel").style.display = "block";
-// }
-
-// function fecharPopupResponsavel() {
-//     document.getElementById("popupResponsavel").style.display = "none";
-// }
-
-
-// meninas aqui é pra aparecer as info dos dados que estão no back
-function abrirPopupResponsavel() {
-    document.getElementById("popupResponsavel").style.display = "block";
-}
-
-function fecharPopupResponsavel() {
-    document.getElementById("popupResponsavel").style.display = "none";
-}
-
 document.addEventListener("DOMContentLoaded", () => {
 
     const responsavel = JSON.parse(
@@ -30,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
     );
 
     if (!responsavel) {
-        console.log("Responsável não encontrado no localStorage");
+        console.log("Responsável não encontrado");
         return;
     }
 
@@ -53,20 +28,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
     responsavel.criancas.forEach(crianca => {
 
-        const div = document.createElement("div");
+        const divNome = document.createElement("div");
+        divNome.className = "dados-box";
+        divNome.innerHTML = `
+           <p>Criança: <span>${crianca.nomeCompleto}</span></p>`;
+            listaCriancas.appendChild(divNome);
 
-        div.className = "dados-box linha-status";
-
-        div.innerHTML = `
-            <p>CRIANÇA: ${crianca.nomeCompleto}</p>
-
-            <div class="status ativo">
-                <span class="bolinha"></span>
-            </div>
-        `;
-
-        listaCriancas.appendChild(div);
-
+        const divUsuario = document.createElement("div");
+        divUsuario.className = "dados-box";
+        divUsuario.innerHTML = `
+           <p>Usuário: <span>${crianca.nomeUsuario || ''}</span></p>`;
+            listaCriancas.appendChild(divUsuario);
     });
 
 });
