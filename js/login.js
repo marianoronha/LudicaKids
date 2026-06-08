@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
                 );
 
                 window.top.document.getElementById("modalLogin").style.display = "none";
-                window.top.location.href = "quemvaijogar.html";
+                window.top.location.href = "conhecalogado.html";
 
             } else{
                 alert(
