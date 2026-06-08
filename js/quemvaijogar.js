@@ -21,8 +21,8 @@ document.addEventListener("DOMContentLoaded", () => {
         card.classList.add("card-crianca");
 
         card.innerHTML = `
-            <img src="midias/girafasperfil/girafa${(index % 9) + 1}.png">
-            <p>${crianca.nomeCompleto}</p>
+           <img src="${localStorage.getItem('fotoPerfil_' + crianca._id) || 'midias/girafasperfil/girafa' + ((index % 9) + 1) + '.png'}">
+            <p>${crianca.nomeUsuario || crianca.nomeCompleto}</p>
         `;
 
         card.addEventListener("click", () => {
