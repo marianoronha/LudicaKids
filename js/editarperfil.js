@@ -144,6 +144,79 @@ async function salvarnoBanco(responsavel, token, novaSenha = null) {
     }
 
 
+    // adicionar criança
+
+
+    let contadorCriancas = 0;
+
+function adicionarCrianca() {
+
+    contadorCriancas++;
+
+    const container =
+        document.getElementById("criancas-container");
+
+    const novaCrianca =
+        document.createElement("div");
+
+    novaCrianca.classList.add("box-crianca");
+
+    novaCrianca.innerHTML = `
+
+        <h3>Nova Criança ${contadorCriancas}</h3>
+
+        <div class="input-box">
+            <i class="fa-solid fa-user"></i>
+            <input
+                type="text"
+                placeholder="Nome completo da criança"
+                required>
+        </div>
+
+        <div class="input-box">
+            <i class="fa-solid fa-id-card"></i>
+            <input
+                type="text"
+                placeholder="CPF da criança"
+                required>
+        </div>
+
+        <div class="input-box">
+            <i class="fa-solid fa-user-pen"></i>
+            <input
+                type="text"
+                placeholder="Nome de usuário"
+                required>
+        </div>
+
+        <div class="input-box">
+            <i class="fa-solid fa-calendar"></i>
+            <input
+                type="date"
+                required>
+        </div>
+
+        <button
+            type="button"
+            class="btn-remover"
+            onclick="removerCrianca(this)">
+
+            Remover Criança
+
+        </button>
+
+    `;
+
+    container.appendChild(novaCrianca);
+}
+
+function removerCrianca(botao) {
+
+    botao.parentElement.remove();
+
+}
+
+
 
 
 

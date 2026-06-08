@@ -212,3 +212,42 @@ hr{
     background:transparent;
 }
 
+/* adicionar criança */
+
+.box-crianca{
+    background:#e9ecef;
+    border-radius:12px;
+    padding:15px;
+    margin-bottom:15px;
+    margin-top:15px;
+}
+
+.box-crianca h3{
+    text-align:center;
+    color:#004aad;
+    margin-bottom:15px;
+}
+
+.btn-remover{
+    width:100%;
+    padding:14px;
+
+    background:#d62828;
+    color:white;
+
+    border:none;
+    border-radius:10px;
+
+    font-size:16px;
+    font-weight:bold;
+
+    cursor:pointer;
+
+    margin-top:10px;
+    transition:0.3s;
+}
+
+.btn-remover:hover{
+    background:#b71c1c;
+}
+
