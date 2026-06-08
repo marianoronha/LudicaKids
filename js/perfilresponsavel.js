@@ -28,17 +28,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
     responsavel.criancas.forEach(crianca => {
 
-        const divNome = document.createElement("div");
-        divNome.className = "dados-box";
-        divNome.innerHTML = `
-           <p>Criança: <span>${crianca.nomeCompleto}</span></p>`;
-            listaCriancas.appendChild(divNome);
-
-        const divUsuario = document.createElement("div");
-        divUsuario.className = "dados-box";
-        divUsuario.innerHTML = `
-           <p>Usuário: <span>${crianca.nomeUsuario || ''}</span></p>`;
-            listaCriancas.appendChild(divUsuario);
+        const card = document.createElement("div");
+        card.className = "crianca-card";
+        card.innerHTML = `
+           <div class= "crianca-info">
+           <span class= "crianca-nome">${crianca.nomeCompleto}</span>
+           <span class= "crianca-usuario">@${crianca.nomeUsuario || ''}</span>
+           </div>
+          `; 
+        listaCriancas.appendChild(card);
     });
 
 });
