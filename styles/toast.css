@@ -33,3 +33,52 @@
     top: 40%;
     text-align: center;
 }
+
+.confirm-overlay{
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,.4);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 10000;
+}
+
+.confirm-box{
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    width: 350px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,.2);
+}
+
+.confirm-box p{
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.confirm-botoes{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn-cancelar{
+    background: #ddd;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn-confirmar{
+    background: #fd5a47;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}

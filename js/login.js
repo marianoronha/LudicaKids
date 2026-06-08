@@ -43,23 +43,24 @@ document.addEventListener("DOMContentLoaded", ()=>{
                     )
                 );
 
-                alert(
-                    "Login realizado!"
-                );
+                mostrarToastPai("Login realizado!", "sucesso");
 
-                window.top.document.getElementById("modalLogin").style.display = "none";
-                window.top.location.href = "conhecalogado.html";
+                setTimeout(() => {
+                    window.top.document.getElementById("modalLogin").style.display = "none";
+                    window.top.location.href = "conhecalogado.html";
+                }, 2000);
+
 
             } else{
-                alert(
-                dados.mensagem || "Email ou senha inválidos" 
+                mostrarToast(
+                dados.mensagem || "Email ou senha inválidos" , "erro"
             );
         } 
 
         } catch (erro) { 
             console.error(erro); 
-            alert( 
-                "Não foi possível conectar ao servidor." 
+            mostrarToast( 
+                "Não foi possível conectar ao servidor." , "erro"
             );
 
         } finally {

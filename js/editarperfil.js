@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const crianca = JSON.parse(localStorage.getItem("criancaSelecionada"));
 
     if (!responsavel || !token) {
-        alert("Responsável não encontrado.");
+        mostrarToast("Responsável não encontrado.");
         window.location.href = "index.html";
         return;
     }
@@ -46,7 +46,7 @@ async function salvarTudo() {
     }
 
     const novaSenha = document.getElementById("senhaResponsavel").value;
-    await salvarNoBanco(responsavel, token, novaSenha);
+    await salvarNoBanco(responsavel, token, novaSenha, "Alteração feita com sucesso");
 }
 
 
@@ -118,7 +118,7 @@ async function salvarNovaCrianca(botao) {
     const dataNascimento = inputs[3]?.value;
 
     if (!nomeCompleto || !cpf || !nomeUsuario || !dataNascimento) {
-        alert("Preencha todos os campos da criança.");
+        mostrarToast("Preencha todos os campos da criança.");
         return;
     }
 
@@ -128,7 +128,7 @@ async function salvarNovaCrianca(botao) {
     botao.disabled = true;
     botao.textContent = "Salvando...";
 
-    const salvo = await salvarNoBanco(responsavel, token);
+    const salvo = await salvarNoBanco(responsavel, token, null, "Criança adicionada com sucesso!");
 
     if (salvo) {
         bloco.remove(); // remove o formulário da tela após salvar
@@ -147,15 +147,17 @@ async function excluirCrianca() {
 
     if (!responsavel || !token || !crianca) return;
 
-    const confirmado = confirm(`Tem certeza que deseja excluir ${crianca.nomeCompleto}?`);
-    if (!confirmado) return;
+    const confirmado = await mostrarConfirmacao(
+    `Tem certeza que deseja excluir ${crianca.nomeCompleto}?`);
+
+if (!confirmado) return;
 
     const index = responsavel.criancas.findIndex(c => c.cpf === crianca.cpf);
     if (index !== -1) {
         responsavel.criancas.splice(index, 1);
     }
 
-    const salvo = await salvarNoBanco(responsavel, token);
+    const salvo = await salvarNoBanco(responsavel, token, null, "Criança excluída com sucesso!");
     if (salvo) {
         localStorage.removeItem("criancaSelecionada");
         window.location.href = "perfilresponsavel.html";
@@ -165,7 +167,7 @@ async function excluirCrianca() {
 
 //   SALVAR BANCO 
 
-async function salvarNoBanco(responsavel, token, novaSenha = null) {
+async function salvarNoBanco (responsavel, token, novaSenha = null, mensagemSucesso="Criança cadastrada!") {
     try {
         const body = {
             nomeCompleto: responsavel.nomeCompleto,
@@ -191,16 +193,16 @@ async function salvarNoBanco(responsavel, token, novaSenha = null) {
 
         if (resposta.ok) {
             localStorage.setItem("responsavel", JSON.stringify(dados));
-            alert("Criança adicionada com sucesso!");
+            mostrarToast(mensagemSucesso, "sucesso");
             return true;
         } else {
-            alert(dados.mensagem || "Erro ao salvar");
+            mostrarToast(dados.mensagem || "Erro ao salvar");
             return false;
         }
 
     } catch (erro) {
         console.error(erro);
-        alert("Não foi possível conectar ao servidor.");
+        mostrarToast("Não foi possível conectar ao servidor.");
         return false;
     }
 }

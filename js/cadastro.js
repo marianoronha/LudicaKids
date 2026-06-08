@@ -50,7 +50,7 @@ const payload = {
 
 //caso dê certo
 if (resposta.ok){
-    mostrarToast("Cadastro concluído com sucesso");
+    mostrarToast("Cadastro concluído com sucesso" , "sucesso");
     formCadastro.reset();
     setTimeout(() => (window.location.href = "conhecalogado.html"), 2000);
 }else {

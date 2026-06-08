@@ -84,16 +84,16 @@ document.addEventListener("DOMContentLoaded", () => {
                 localStorage.setItem("token", dados.token);
                 localStorage.setItem("responsavel", JSON.stringify(dados.responsavel));
 
-                alert("Login realizado!");
+                mostrarToast("Login realizado!" , "sucesso");
                 window.location.href = "perfilresponsavel.html";
 
             } else {
-                alert(dados.mensagem || "Email ou senha inválidos");
+                mostrarToast(dados.mensagem || "Email ou senha inválidos" , "erro");
             }
 
         } catch (erro) {
             console.error(erro);
-            alert("Não foi possível conectar ao servidor.");
+            alert("Não foi possível conectar ao servidor." , "erro");
 
         } finally {
             botao.disabled = false;
