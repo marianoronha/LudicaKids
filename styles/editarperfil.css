@@ -128,28 +128,44 @@ hr{
 .card-crianca{
     background:#e9ecef;
     border-radius:12px;
-
     padding:15px;
+    margin-bottom:15px;
 
     display:flex;
-    justify-content:space-between;
-    align-items:center;
+    flex-direction:column;
+    align-items:stretch;
+    gap:10px;
 
-    margin-bottom:15px;
+}
+
+
+.card-crianca label{
+    font-weight:bold;
+    color:#555;
+    margin-bottom:3px;
 }
 
 .btn-excluir{
+
+    width:100%;
+    padding:14px;
+
     background:#d62828;
     color:white;
 
     border:none;
-    border-radius:8px;
+    border-radius:10px;
 
-    padding:10px 15px;
+    font-size:16px;
+    font-weight:bold;
 
     cursor:pointer;
+
+    margin-top:10px;
     transition:0.3s;
 }
+
+
 
 .btn-excluir:hover{
     background:#b71c1c;
@@ -162,10 +178,16 @@ hr{
     }
 
     .card-crianca{
-        flex-direction:column;
-        gap:10px;
-        text-align:center;
-    }
+    background:#e9ecef;
+    border-radius:12px;
+    padding:15px;
+    margin-bottom:15px;
+
+    display:flex;
+    flex-direction:column;
+    align-items:stretch;
+    gap:10px;
+}
 
     .btn-excluir{
         width:100%;
