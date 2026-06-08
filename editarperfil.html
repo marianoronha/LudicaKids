@@ -72,14 +72,6 @@
                 >
         </div>
 
-        <button
-            class="btn-salvar"
-            onclick="salvarAlteracoes()">
-
-            Salvar Alterações
-
-        </button>
-
         <hr>
 
         <h2>Dados da Criança</h2>
@@ -120,14 +112,18 @@
                 disabled>
         </div>
 
-        <button
-            class="btn-salvar"
-            onclick="salvarCrianca()">
+            <div class = "grupo-botoes">
+                <button class="btn-salvar" onclick="salvarTudo()">
+                    <i class="fa-solid fa-floppy-disk"></i>
+                    Salvar Alterações 
+                </button>
 
-            Salvar Alterações
-
-        </button>
-
+                <button class="btn-excluir" onclick="excluirCrianca()">
+                    <i class="fa-solid fa-trash"></i>
+                    Excluir Criança
+                </button>
+            </div>
+        
     </div>
 
     <script src="js/api.js"></script>
