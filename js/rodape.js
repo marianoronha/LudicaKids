@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const div = document.createElement("div");
             div.innerHTML = html;
 
+            // // Adiciona o rodapé no final da página
             document.body.appendChild(div);
 
         });

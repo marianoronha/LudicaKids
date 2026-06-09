@@ -20,7 +20,7 @@ function trocarFoto(novaFoto) {
     fecharPopup();
 }
 
-
+//  disply block aparece o pop up e o none fecha
 function abrirPopupResponsavel() {
     document.getElementById("popupResponsavel").style.display = "block";
 }
@@ -32,8 +32,9 @@ function fecharPopupResponsavel() {
 
 
 document.addEventListener("DOMContentLoaded", () => {
+// o código é executado só quando o HTML estiver todo carregado
 
-
+// procura localStorage os dados da criança selecionada e do responsável que foram salvos antes
     const crianca = JSON.parse(
     localStorage.getItem("criancaSelecionada"));
 
@@ -42,6 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
     );
 
     if(!crianca || !responsavel) return;
+    // se não existir uma criança ou um responsável salvos, o código é interrompido
 
 
     document.getElementById("nomeCrianca").textContent = crianca.nomeCompleto;
@@ -49,6 +51,8 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("nomeUsuarioCrianca").textContent = crianca.nomeUsuario || '';
 
     document.getElementById("nomeResponsavel").textContent = responsavel.nomeCompleto;
+
+    // coloca na página o nome da criança, o nome de usuário e o nome do responsável
         
     const fotoSalva = localStorage.getItem("fotoPerfil_"+ crianca._id);
     if(fotoSalva){
@@ -90,6 +94,7 @@ document.addEventListener("DOMContentLoaded", () => {
             } else {
                 mostrarToast(dados.mensagem || "Email ou senha inválidos" , "erro");
             }
+            // Mostra uma mensagem caso o e-mail ou a senha estejam incorretos.
 
         } catch (erro) {
             console.error(erro);

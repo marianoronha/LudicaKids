@@ -1,21 +1,27 @@
 
 // ANIMAÇÃO LOGIN E CADASTRO
+// https://youtu.be/GtsNZtzZiec?si=yxU_9DktsrXUnJza aprendi nesse video
 
 
+// // Procura o botão de entrar pelo id="signin"
 var btnSignin = document.getElementById("signin");
 
+// Procura o botão de cadastro pelo id="signup"
 var btnSignup = document.getElementById("signup");
 
+// Procura o container principal da tela de login
 var container =
 document.querySelector(".login-page .container");
 
-
+// Verifica se o botão Entrar e o container existem
 if (btnSignin && container) {
 
+     // Adiciona um evento de clique ao botão Entrar que é quando acontece a animação de jogar o entrar para o lado
     btnSignin.addEventListener("click", function () {
 
+        // a classe responsável pela animação/tela de login
         container.classList.add("sign-in-js");
-
+// parte q remove parte do cadastro 
         container.classList.remove("sign-up-js");
 
     });
@@ -23,12 +29,13 @@ if (btnSignin && container) {
 }
 
 
+// essa parte veriica cadastro e container se existe
 if (btnSignup && container) {
 
     btnSignup.addEventListener("click", function () {
 
         container.classList.add("sign-up-js");
-
+// esconde aquele trecho do login
         container.classList.remove("sign-in-js");
 
     });
@@ -40,24 +47,25 @@ if (btnSignup && container) {
 
 
 
-// CADASTRO
+// essa parte coloquei CADASTRO
 
-
+// ormulario que utilizei para cadastro
 const signupForm = document.getElementById("signupForm");
 
-
+// verificação 
 if (signupForm) {
 
     signupForm.addEventListener("submit", function (e) {
 
         e.preventDefault();
-
+// obtem nome e email
         const name =
         document.getElementById("signupName")?.value || "";
 
         const email =
         document.getElementById("signupEmail")?.value || "";
 
+        // // aparece uma mensagem de sucesso
         alert(
             "Conta criada com sucesso!\n\nNome: "
             + name +
@@ -70,15 +78,15 @@ if (signupForm) {
 }
 
 
-// =========================================
-// ADICIONAR CRIANÇA
-// =========================================
+// adicionar criança
 
+// contado para contar criança
 let contadorCriancas = 1;
 
 
 function adicionarCrianca() {
 
+    // container onde as crianças serão adicionadas
     const containerCriancas =
     document.getElementById("criancas-container");
 
@@ -86,13 +94,14 @@ function adicionarCrianca() {
     if (!containerCriancas) return;
 
 
+    // Cria uma nova div para armazenar os dados da criança
     const novaCrianca =
     document.createElement("div");
 
-
+// // Adiciona a classe CSS da caixa da criança
     novaCrianca.classList.add("box-crianca");
 
-
+// aqui fica o html da nova criança
     novaCrianca.innerHTML = `
 
 <h3>Criança ${contadorCriancas}</h3>
@@ -130,7 +139,7 @@ onclick="removerCrianca(this)">
 </div>
 
 `;
-
+// adiiocnca dentro do container
     containerCriancas.appendChild(novaCrianca);
 
     contadorCriancas++;
@@ -139,7 +148,7 @@ onclick="removerCrianca(this)">
 
 
 
-// REMOVER CRIANÇA
+// REMOVER  a CRIANÇA
 
 
 function removerCrianca(botao) {
@@ -149,7 +158,7 @@ function removerCrianca(botao) {
 
 
     if (box) {
-
+// remove a criança da tela
         box.remove();
 
     }
@@ -157,10 +166,9 @@ function removerCrianca(botao) {
 }
 
 
-// =========================================
-// MENU LATERAL
-// =========================================
+// menu da lateral
 
+// abrir e fecar menu pelo id
 function abrirMenuLudica() {
 
     const menu =
@@ -177,7 +185,7 @@ function abrirMenuLudica() {
 
 // SUBMENU JOGOS
 
-
+// botao q abre submenu
 const botao =
 document.querySelector(".toggle-btn");
 

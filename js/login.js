@@ -10,8 +10,13 @@ document.addEventListener("DOMContentLoaded", ()=>{
         const senha = document.getElementById("loginPassword").value;
         const botao = loginForm.querySelector("button[type='submit']");
 
+        // pega e-mail e a senha preenchidos pelo usuário.
+
         botao.disabled=true;
         botao.textContent= "Entrando...";
+
+        // Bloqueia novos cliques e mostra a mensagem "Entrando..." enquanto a verificação é realizada.
+
 
         try{
             const resposta = await fetch(
@@ -43,6 +48,8 @@ document.addEventListener("DOMContentLoaded", ()=>{
                     )
                 );
 
+                // Salva o token e os dados do responsável no navegador para manter 
+                // o usuário logado e permitir o acesso às próximas páginas.
                 mostrarToastPai("Login realizado!", "sucesso");
 
                 setTimeout(() => {
