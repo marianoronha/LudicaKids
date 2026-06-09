@@ -3,10 +3,14 @@
 
 document.addEventListener("DOMContentLoaded", () => {
 
+    // Recupera os dados do responsável salvos
     const responsavel = JSON.parse(
         localStorage.getItem("responsavel")
     );
 
+
+    // Verifica se existe um responsável e se ele possui crianças cadastradas
+    // Caso contrário, interrompe a execução
     if (!responsavel || !responsavel.criancas) {
         return;
     }
