@@ -63,6 +63,10 @@ document.addEventListener("DOMContentLoaded", ()=>{
                 "Não foi possível conectar ao servidor." , "erro"
             );
 
+        // Executa sempre, independentemente do resultado
+
+        // Reabilita o botão de login
+
         } finally {
                 botao.disabled = false;
                 botao.textContent = "Entrar";
