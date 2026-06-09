@@ -93,7 +93,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         } catch (erro) {
             console.error(erro);
-            alert("Não foi possível conectar ao servidor." , "erro");
+            mostrarToast("Não foi possível conectar ao servidor." , "erro");
 
         } finally {
             botao.disabled = false;
