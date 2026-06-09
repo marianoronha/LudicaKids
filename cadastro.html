@@ -7,7 +7,7 @@
      <meta charset="UTF-8"> <!-- para aceitar caracteres especiais e acentos -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
-
+<!-- Importa a biblioteca Font Awesome, ela permite usar ícones -->
     <link rel="stylesheet"
         href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
 
@@ -18,9 +18,9 @@
 
     <link rel="icon" href="midias/iconlogo.png">
 </head>
-
+<!-- https://www.youtube.com/watch?v=dr86xN8nQWU -->
 <body class="cadastro-page">
-
+<!-- É a estrutura externa que organiza todo o conteúdo. -->
     <div class="container-cadastro">
 
         <div class="box-cadastro">
@@ -45,6 +45,7 @@
 
             
 <!-- campo para a parte do nome completo do responsável -->
+ <!-- Agrupa o ícone e o campo. -->
                 <label class="label-input">
                      <i class="far fa-user icon-modify"></i> <!-- icone do responsavel -->
 
@@ -52,8 +53,10 @@
                     <!-- campo de digitar o nome -->
                     <input type="text" id="nomeCompleto"
                         placeholder="Nome completo do responsável" required>
+                        <!-- required é preenchimento obrigatório -->
                 </label>
-
+<!-- label junta nesse caso ícone e o campo de texto -->
+ <!-- input pra digitar informações -->
                 <label class="label-input">
                     <i class="fas fa-id-card icon-modify"></i>
                     <input type="text" id="cpf"
